@@ -34,11 +34,6 @@
 //     @each $s in a,b,c
 // 	    	#{$s}
 //				display: none
-// ## fonts 
-// Save fonts to /css/fonts, after that write (eot, woff, ttf):
-// +font(book, cytiapro-black-webfont)  
-// =book
-// 	font-family: "book", Arial, sans-serif 
 // insert pics into css
 // div
 // 	+pic("blabla.png")
@@ -46,16 +41,75 @@
 // 	+png(blabla)
 // p
 // 	+jpg(bla)
-
-
++font(pragmaticabold, pragmaticabold)  
+=bold
+	font-family: "pragmaticabold", Arial, sans-serif 
++font(pragmaticalight, pragmaticalight)  
+=light
+	font-family: "pragmaticalight", Arial, sans-serif 
++font(pragmaticalightoblique, pragmaticalightoblique)  
+=light_it
+	font-family: "pragmaticalightoblique", Arial, sans-serif 
++font(robotocondensed-regular, robotocondensed-regular)  
+=cond
+	font-family: "robotocondensed-regular", Arial, sans-serif 
+$gray: #666
+$rose: #e50278
+$blue: #6d9edc
 body
-	font-family: Arial, sans-serif 
-	font-size: 12px 
+	font-size: 14px 
 	line-height: 1.4
-
-
+	+light
+	background: #eaeaea
+	color: $gray 
+html
+	+selection
+		background: rgba($blue,.3)  
+a
+	text-decoration: none
+.wrap
+	+clr
+	clear: both
+.wrapper
+	overflow: hidden 
+.out
+	position: relative
+	width: 1500px
+	z-index: 2
+	margin: 0 0 -290px
+	min-height: 100%
+	height: auto !important
+	height: 100%	 
+	overflow: hidden 
+.push
+	clear: both
+	height: 290px
 // common blocks      
 
+.header
+	position: fixed
+	z-index: 10
+	left: 0
+	top: 0
+	width: 1500px
+	height: 80px
+	+clr
+	background: #fff
+	&__logo
+		float: left
+	&__nav
+		float: left
+	&__action
+		float: right
+.nav
+	position: fixed
+	z-index: 9
+	top: 80px
+	bottom: 0
+	left: 0
+	padding: 0 27px 
+	width: 293px
+	box-shadow: 0 0 6px rgba(#000, .56) 
 
 
 

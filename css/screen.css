@@ -9,7 +9,7 @@ input[type="submit"]::-moz-focus-inner, button::-moz-focus-inner { padding: 0; b
 
 textarea { overflow: auto; }
 
-input, button { margin: 0; padding: 0; border: 0; }
+input, button { margin: 0; padding: 0; border: 0; -webkit-appearance: none; border-radius: 0; }
 
 div, input, textarea, select, button, h1, h2, h3, h4, h5, h6, a, span, a:focus { outline: none; }
 
@@ -18,7 +18,38 @@ ul, ol { list-style-type: none; }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) { * { -webkit-text-size-adjust: none; } }
 table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
-body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; background: #cccccc; }
+html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+*:before, *:after { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+@font-face { font-family: pragmaticabold; src: url("../fonts/pragmaticabold.eot"); src: url("../fonts/pragmaticabold.eot?#iefix") format("embedded-opentype"), url("../fonts/pragmaticabold.woff2") format("woff2"), url("../fonts/pragmaticabold.woff") format("woff"), url("../fonts/pragmaticabold.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: pragmaticalight; src: url("../fonts/pragmaticalight.eot"); src: url("../fonts/pragmaticalight.eot?#iefix") format("embedded-opentype"), url("../fonts/pragmaticalight.woff2") format("woff2"), url("../fonts/pragmaticalight.woff") format("woff"), url("../fonts/pragmaticalight.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: pragmaticalightoblique; src: url("../fonts/pragmaticalightoblique.eot"); src: url("../fonts/pragmaticalightoblique.eot?#iefix") format("embedded-opentype"), url("../fonts/pragmaticalightoblique.woff2") format("woff2"), url("../fonts/pragmaticalightoblique.woff") format("woff"), url("../fonts/pragmaticalightoblique.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: robotocondensed-regular; src: url("../fonts/robotocondensed-regular.eot"); src: url("../fonts/robotocondensed-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/robotocondensed-regular.woff2") format("woff2"), url("../fonts/robotocondensed-regular.woff") format("woff"), url("../fonts/robotocondensed-regular.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+body { font-size: 14px; line-height: 1.4; font-family: "pragmaticalight", Arial, sans-serif; background: #eaeaea; color: #666666; }
+
+html ::selection { background: rgba(109, 158, 220, 0.3); }
+html ::-moz-selection { background: rgba(109, 158, 220, 0.3); }
+
+a { text-decoration: none; }
+
+.wrap { *zoom: 1; clear: both; }
+.wrap:after { content: " "; display: table; clear: both; }
+
+.wrapper { overflow: hidden; }
+
+.out { position: relative; width: 1500px; z-index: 2; margin: 0 0 -290px; min-height: 100%; height: auto !important; height: 100%; overflow: hidden; }
+
+.push { clear: both; height: 290px; }
+
+.header { position: fixed; z-index: 10; left: 0; top: 0; width: 1500px; height: 80px; *zoom: 1; background: white; }
+.header:after { content: " "; display: table; clear: both; }
+.header__logo { float: left; }
+.header__nav { float: left; }
+.header__action { float: right; }
+
+.nav { position: fixed; z-index: 9; top: 80px; bottom: 0; left: 0; padding: 0 27px; width: 293px; box-shadow: 0 0 6px rgba(0, 0, 0, 0.56); }
 
 .l { *zoom: 1; }
 .l:after { content: " "; display: table; clear: both; }
