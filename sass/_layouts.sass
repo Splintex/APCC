@@ -1,9 +1,48 @@
-// default layout
-.l
+.l-row
+	padding: 31px 20px 
 	+clr
-	.l-col1
-		float: left
-		width: 20%
-	.l-col2
-		float: right
-		width: 70%
+	&_gray
+		background: #f8f8f8 
+		padding-bottom: 0
+		margin-bottom: 20px
+	&_table
+		padding: 0
+		display: table
+		width: 100%
+		&:after
+			display: none
+.l-cell-big,
+.l-cell-small
+	display: table-cell
+	vertical-align: top
+.l-cell-big
+	.title
+		padding: 25px 20px 0
+.l-cell-small
+	width: 300px
+	&.is-blue
+		background: #4382d1 
+	+ .l-cell-big
+		border-right: 2px solid #fff 
+.l-row-in
+	+clr
+	margin-left: -20px
+.l-row-table
+	display: table
+	width: 100%
+	table-layout: fixed
+	.l-col4
+		display: table-cell
+		float: none
+		vertical-align: top
+	
+.l-col4
+	float: left
+	position: relative
+	padding-left: 20px
+	width: 25%
+.l-col3
+	position: relative
+	padding-left: 20px
+	float: left
+	width: 32.8%

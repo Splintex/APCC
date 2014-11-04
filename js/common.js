@@ -4,5 +4,16 @@ head.ready(function() {
 	// 	$(".js-popup").hide();
 	// });
 
-	console.log($('body').html());
+	$('.js-slick').slick({
+		dots: false,
+		infinite: false,
+		speed: 300,
+		slidesToShow: 4,
+		slidesToScroll: 4,
+		arrows: false,
+		adaptiveHeight: true,
+		prevArrow: '.btn-prev',
+		nextArrow: '.btn-next'
+	});
+	$(".js-datepicker").datepicker();
 });

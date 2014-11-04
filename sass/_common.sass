@@ -54,8 +54,11 @@
 =cond
 	font-family: "robotocondensed-regular", Arial, sans-serif 
 $gray: #666
+$gray_l: #8a9097
 $rose: #e50278
 $blue: #6d9edc
+$blue_d: #3a70b4
+$border: #abafb3
 body
 	font-size: 14px 
 	line-height: 1.4
@@ -73,17 +76,18 @@ a
 .wrapper
 	overflow: hidden 
 .out
-	position: relative
+	padding: 80px 0 0 293px
 	width: 1500px
 	z-index: 2
-	margin: 0 0 -290px
+	margin: 0 0 -420px
 	min-height: 100%
 	height: auto !important
 	height: 100%	 
 	overflow: hidden 
+	background: #fff 
 .push
 	clear: both
-	height: 290px
+	height: 420px
 // common blocks      
 
 .header
@@ -91,40 +95,195 @@ a
 	z-index: 10
 	left: 0
 	top: 0
+	padding: 16px 23px 16px 30px 
 	width: 1500px
 	height: 80px
 	+clr
 	background: #fff
 	&__logo
 		float: left
-	&__nav
-		float: left
+		margin-top: 12px
 	&__action
 		float: right
+		+clr
+	&__link,
+	&__enter 
+		display: inline-block
+		vertical-align: middle
+	&__link
+		margin-right: 37px
+		height: 48px
+		line-height: 48px
+		a
+			color: #abafb3
+			font-size: 12px 
+			+tr(color .3s)
+			&:hover
+				color: $rose 
+.menu
+	float: left
+	display: table
+	width: 860px
+	table-layout: fixed
+	&__item
+		display: table-cell
+		border-right: 1px solid #e7e7e7 
+		position: relative 
+		padding: 10px 25px 
+		vertical-align: middle
+		max-width: 25%
+		line-height: 1
+		text-align: center
+		&:hover
+			.menu__drop
+				opacity: 1
+				visibility: visible
+				+transform(translateY(0))
+	&__link
+		color: #202c3c
+		font-size: 14px
+		+tr(color .3s)
+		&:hover
+			color: $rose 
+	&__drop
+		position: absolute
+		top: 100%
+		left: 10px
+		right: 10px
+		padding-top: 15px
+		text-align: left
+		opacity: 0
+		visibility: hidden
+		+transform(translateY(-20px))
+		+transition(opacity .3s, transform .3s)
+		will-change: opacity, transform
+		box-shadow: 0 5px 5px rgba(#000,.12) 
+		&:before
+			content: ""
+			position: absolute
+			top: 0
+			left: -10px
+			right: -10px
+			height: 15px
+			background: #fff  
+		a
+			display: block
+			padding: 19px 26px
+			color: $gray_l
+			font-size: 12px
+			line-height: 1
+			background: #f6f6f6
+			+transition(color .3s)
+			&:hover
+				background: $rose 
+				color: #fff 
+
 .nav
 	position: fixed
 	z-index: 9
 	top: 80px
 	bottom: 0
 	left: 0
-	padding: 0 27px 
 	width: 293px
 	box-shadow: 0 0 6px rgba(#000, .56) 
+	background: url(../img/bg.png) 0 0 repeat
+	&__in
+		padding: 40px 27px
+		overflow-y: auto 
+		height: 100%
+	&__list
+		margin: 30px 0 
+		li
+			margin-bottom: 23px
+		a
+			display: block
+			position: relative
+			height: 57px
+			line-height: 57px
+			color: #495763
+			font-size: 14px 
+			+tr(color .3s)
+			&:hover
+				color: #000 
+		i
+			display: inline-block
+			vertical-align: middle
+			position: relative
+			em
+				position: absolute
+				top: -11px
+				right: -11px
+				width: 21px
+				height: 21px
+				text-align: center
+				line-height: 21px
+				color: #fff
+				font-style: normal 
+				font-size: 12px
+				border-radius: 50%
+				background: $rose
+		span
+			position: absolute
+			top: 0
+			bottom: 0
+			left: 0
+			padding-left: 64px
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+.footer
+	position: relative
+	z-index: 2
+	width: 1500px
+	padding: 76px 0 0 312px
+	min-height: 420px
+	background: #cfd8e2 
+	+clr
+	&__info
+		float: left
+		margin: 6px 115px 0 0
+		text-align: center
+	&__logo
+		margin-bottom: 23px
+	&__tel
+		font-size: 18px
+		+bold
+		a
+			color: $gray_l
+	&__email
+		font-size: 12px
+		a
+			color: #4382d1
+	&__nav-wrap
+		overflow: hidden
+	&__nav
+		float: left
+		padding-right: 25px
+		width: 25%
+	&__list
+		line-height: 2.83
+		a
+			font-size: 12px
+			color: $gray_l
+			+tr(color .3s)
+			&:hover
+				color: #000 
+	&__categ
+		margin-bottom: 5px
+		min-height: 40px
+		a
+			font-size: 14px
+			color: #68717a
+			text-transform: uppercase
+			+cond
+			+tr(color .3s)
+			&:hover
+				color: #000 
+		
+	&__meta
+		border-top: 1px solid #e0e7ee 
+		padding: 20px 0 
+		color: #fff
+		font-size: 12px 
 
 
 

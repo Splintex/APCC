@@ -1,0 +1,293 @@
+.icon-project
+	+s(project)
+.icon-event
+	+s(event)
+.icon-categ 
+	+s(categ)
+.icon-add
+	+s(add)
+.icon-ask
+	+s(ask)
+.field
+	display: block
+.input
+	display: block
+	padding: 0 12px 
+	width: 100%
+	height: 32px
+	font-size: 14px
+	background: none
+	border: 1px solid $border
+	+light
+	+tr(border .3s linear)
+	+placeholder
+		color: $border
+	&:focus
+		border-color: #000
+
+.search-form
+	position: relative
+	&__btn
+		position: absolute
+		top: 50%
+		margin-top: -8px
+		right: 12px
+		+svg(search,17,17) 
+
+.btn
+	display: inline-block
+	padding: 6px 37px
+	border: 2px solid
+	color: #68717a
+	font-size: 14px
+	+cond
+	+tr(color .3s)
+	&:hover
+		color: #000 
+
+.title
+	position: relative
+	margin: 0 0 25px 
+	&__link
+		display: inline-block
+		vertical-align: bottom
+		margin-right: 17px
+		font-size: 18px
+		+cond
+		color: #000
+		text-transform: uppercase
+		border-bottom: 3px solid $rose
+	.btn-more
+		vertical-align: bottom
+.title_white
+	.title__link
+		color: #fff
+		border-color: #fff  
+	.btn-more
+		color: #c4deff
+		 
+.btn-more
+	display: inline-block
+	position: relative
+	width: 25px
+	height: 24px
+	line-height: 1
+	border: 2px solid
+	color: #abafb3
+	text-align: center
+	+cond 
+	+tr(color .3s)
+	&:before
+		content: "..." 
+		position: absolute
+		top: -14px
+		height: 3px
+		left: -1px
+		right: 0
+		font-size: 30px
+	&:hover
+		color: #000 
+
+.item
+	color: $gray 
+	&__media
+		position: relative
+		img
+			display: block
+			width: 100%
+			height: auto
+			will-change: opacity
+			+tr(opacity .3s)
+			&:hover
+				opacity: 0.9
+		&:hover
+			.item__more
+				opacity: 1
+	&__left
+		float: left
+		padding: 0 13px 0 0
+		width: 106px
+	&__more
+		position: absolute
+		top: 50%
+		left: 50%
+		margin: -25px 0 0 -25px
+		+s(item-more)
+		opacity: 0
+		+tr(opacity .3s)
+		will-change: opacity
+	&__body	
+		padding: 20px 0
+		line-height: 1.66
+		overflow: hidden
+		strong
+			+bold
+			font-weight: normal
+		ul
+			margin-bottom: 12px
+	&__title
+		display: inline-block
+		margin-bottom: 12px
+		font-size: 16px
+		+cond
+		color: #000
+		+tr(color .3s)
+		&:hover
+			color: $blue 
+	.date
+		margin: 4px 0
+.item_related
+	position: relative
+	padding-left: 30px
+	margin-bottom: 31px
+	&:last-child
+		&:before
+			display: none
+	&:before
+		content: ""
+		position: absolute
+		left: 13px
+		top: 17px
+		bottom: -31px
+		width: 2px
+		background: #dcdcdc 
+	.date
+		position: relative
+		z-index: 2
+		margin: 0 0 0 -25px
+	.item__body
+		padding-top: 0
+.item_short
+	padding: 20px 
+.categ
+	display: inline-block
+	vertical-align: middle
+	margin-right: 20px
+	position: relative
+	padding: 0 38px 0 8px 
+	height: 23px
+	line-height: 23px
+	background: #4382d1 
+	+g(#4382d1, #3a70b3)
+	color: #fff 
+	font-size: 12px
+	&:hover
+		+g(#3a70b3, #4382d1)
+	span
+		position: absolute
+		top: 0
+		bottom: 0
+		right: 0
+		padding: 0 4px 
+		border: 1px solid #3a70b4
+		background: #fff
+		color: $blue
+
+.comm-count
+	position: relative
+	display: inline-block
+	vertical-align: middle
+	color: $blue 
+	&:before
+		content: ""
+		display: inline-block
+		margin-right: 7px
+		vertical-align: middle
+		+svg(comment, 17,17)
+		 
+
+.slider
+	position: relative
+	&__nav
+		position: absolute
+		top: -48px
+		right: 0
+		font-size: 0
+.btn-prev,
+.btn-next
+	display: inline-block
+	margin-left: 4px
+	position: relative
+	vertical-align: middle
+	width: 22px
+	height: 22px
+	background: none
+	border: 2px solid #b0b0b0
+	+tr(border .3s)
+	&:before
+		content: ""
+		position: absolute
+		top: 3px
+		+tr(border .3s)
+	&:hover
+		border-color: #000 
+.btn-prev
+	&:before
+		left: 3px
+		+arr(9,12,#b0b0b0,l)
+	&:hover
+		&:before
+			+arr(9,12,#000,l)
+.btn-next
+	&:before
+		left: 5px
+		+arr(9,12,#b0b0b0,r)
+	&:hover
+		&:before
+			+arr(9,12,#000,r)
+
+.date
+	color: $gray_l
+	font-size: 12px
+	+light_it 
+	height: 17px
+	line-height: 17px
+	span
+		display: inline-block
+		margin-right: 5px
+		padding: 0 3px 
+		background: $rose
+		color: #fff 
+		
+.box
+	padding: 24px 20px 
+	&__list
+		li
+			border-top: 1px solid #83ade3
+		a
+			display: block 
+			padding: 9px 0 12px
+			color: #fff
+			font-size: 14px  
+			+clr
+			&:hover
+				span
+					color: #fff 
+			span
+				float: right
+				border: 1px solid
+				padding: 0 6px 
+				font-size: 12px
+				height: 20px
+				line-height: 18px
+				color: #b7d3f6 
+				text-align: center
+				+tr(color .3s)
+				
+
+.date-box
+	border: 1px solid #e7e7e7
+	padding: 4px 0 8px
+	width: 93px
+	text-align: center
+	color: #000 
+	+cond
+	line-height: 1
+	font-size: 12px
+	span
+		display: inline-block
+		padding: 2px 0 
+		margin: 0 0 3px 
+		+light
+		border-bottom: 3px solid $rose
+		font-size: 36px
