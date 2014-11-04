@@ -27,6 +27,8 @@
 
 .search-form
 	position: relative
+	.input
+		padding-right: 35px
 	&__btn
 		position: absolute
 		top: 50%
@@ -34,29 +36,38 @@
 		right: 12px
 		+svg(search,17,17) 
 
+.to-center
+	text-align: center
 .btn
 	display: inline-block
 	padding: 6px 37px
 	border: 2px solid
 	color: #68717a
 	font-size: 14px
+	text-align: center
 	+cond
 	+tr(color .3s)
 	&:hover
 		color: #000 
-
+	&_medium
+		padding: 4px 30px 
 .title
 	position: relative
 	margin: 0 0 25px 
 	&__link
 		display: inline-block
 		vertical-align: bottom
+		padding-bottom: 2px
 		margin-right: 17px
 		font-size: 18px
 		+cond
 		color: #000
+		line-height: 1
 		text-transform: uppercase
 		border-bottom: 3px solid $rose
+		+tr(border .3s)
+		&:hover
+			border-color: transparent 
 	.btn-more
 		vertical-align: bottom
 .title_white
@@ -117,25 +128,34 @@
 		+tr(opacity .3s)
 		will-change: opacity
 	&__body	
-		padding: 20px 0
-		line-height: 1.66
+		padding: 23px 0 20px 0
+		line-height: 1.4
 		overflow: hidden
 		strong
 			+bold
 			font-weight: normal
 		ul
-			margin-bottom: 12px
+			margin-bottom: 17px
+			font-size: 12px
+		li
+			margin-bottom: 4px
+		.to-center
+			padding-top: 28px
 	&__title
 		display: inline-block
-		margin-bottom: 12px
+		margin-bottom: 13px
 		font-size: 16px
 		+cond
 		color: #000
+		line-height: 1.25
 		+tr(color .3s)
 		&:hover
 			color: $blue 
+	&__meta
+		.categ
+			margin: 0 20px 0 0
 	.date
-		margin: 4px 0
+		margin: 4px 0 8px
 .item_related
 	position: relative
 	padding-left: 30px
@@ -162,7 +182,6 @@
 .categ
 	display: inline-block
 	vertical-align: middle
-	margin-right: 20px
 	position: relative
 	padding: 0 38px 0 8px 
 	height: 23px
@@ -171,8 +190,10 @@
 	+g(#4382d1, #3a70b3)
 	color: #fff 
 	font-size: 12px
+	+tr(opacity .3s)
+	will-change: opacity
 	&:hover
-		+g(#3a70b3, #4382d1)
+		opacity: 0.9
 	span
 		position: absolute
 		top: 0
@@ -188,12 +209,15 @@
 	display: inline-block
 	vertical-align: middle
 	color: $blue 
+	+tr(color .3s)
 	&:before
 		content: ""
 		display: inline-block
 		margin-right: 7px
 		vertical-align: middle
 		+svg(comment, 17,17)
+	&:hover
+		color: $blue_d 
 		 
 
 .slider

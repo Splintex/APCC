@@ -75,34 +75,49 @@
 .slick-prev,
 .slick-next
 	position: absolute
-	top: 50%
-	margin-top: -14px
-	+hide-text
-	height: 50px
+	top: -48px
+	width: 22px
+	height: 22px
 	background: none
+	border: 2px solid #b0b0b0
+	+tr(border .3s)
+	+hide-text
 	&:focus
 		outline: none
 	&.slick-disabled
-		opacity: 0.2
+		border-color: #e7e7e7 
 	&:before
-		height: 50px
-		line-height: 50px
+		content: ""
+		position: absolute
+		top: 3px
+		+tr(border .3s)
+	&:hover
+		border-color: #000 
+
 .slick-prev
-	left: 0
+	right: 26px
+	&.slick-disabled
+		border-color: #e7e7e7 
+		&:before
+			+arr(9,12,#e7e7e7,l)
 	&:before
-		content: "←"
-		display: inline-block
-		vertical-align: middle
-		font-size: 61px
-		color: #fff 
+		left: 3px
+		+arr(9,12,#b0b0b0,l)
+	&:hover
+		&:before
+			+arr(9,12,#000,l)
 .slick-next
 	right: 0
+	&.slick-disabled
+		border-color: #e7e7e7
+		&:before
+			+arr(9,12,#e7e7e7,r)
 	&:before
-		content: "→"
-		display: inline-block
-		vertical-align: middle
-		font-size: 61px
-		color: #fff 
+		left: 5px
+		+arr(9,12,#b0b0b0,r)
+	&:hover
+		&:before
+			+arr(9,12,#000,r)
 .slick-dots
 	text-align: center
 	position: absolute

@@ -60,12 +60,23 @@ $blue: #6d9edc
 $blue_d: #3a70b4
 $border: #abafb3
 body
+	min-width: 1272px
 	font-size: 14px 
 	line-height: 1.4
 	+light
 	background: #eaeaea
 	color: $gray 
 html
+	// +scrollbar
+	// 	width: 6px
+	// 	height: 6px
+	// 	+border-radius(4px)
+	// 	background: #d1d1d1
+	// +scrollbar-thumb
+	// 	background: $blue_d
+	// 	+border-radius(4px)
+	// +scrollbar-track-piece     
+	// 	+border-radius(4px) 
 	+selection
 		background: rgba($blue,.3)  
 a
@@ -77,14 +88,15 @@ a
 	overflow: hidden 
 .out
 	padding: 80px 0 0 293px
-	width: 1500px
-	z-index: 2
 	margin: 0 0 -420px
 	min-height: 100%
 	height: auto !important
 	height: 100%	 
 	overflow: hidden 
 	background: #fff 
+.l-center
+	margin: 0 auto 
+	max-width: 1500px
 .push
 	clear: both
 	height: 420px
@@ -94,15 +106,15 @@ a
 	position: fixed
 	z-index: 10
 	left: 0
+	right: 0
 	top: 0
-	padding: 16px 23px 16px 30px 
-	width: 1500px
+	padding: 16px 12px 16px 30px 
 	height: 80px
 	+clr
 	background: #fff
 	&__logo
 		float: left
-		margin-top: 12px
+		margin: 12px 1.7% 0 0
 	&__action
 		float: right
 		+clr
@@ -123,16 +135,19 @@ a
 .menu
 	float: left
 	display: table
-	width: 860px
+	width: 59%
 	table-layout: fixed
+	+r(1400)
+		width: 55%
 	&__item
 		display: table-cell
 		border-right: 1px solid #e7e7e7 
 		position: relative 
-		padding: 10px 25px 
+		padding: 0 3% 
+		height: 48px
+		line-height: 48px
 		vertical-align: middle
 		max-width: 25%
-		line-height: 1
 		text-align: center
 		&:hover
 			.menu__drop
@@ -140,6 +155,9 @@ a
 				visibility: visible
 				+transform(translateY(0))
 	&__link
+		display: inline-block
+		vertical-align: middle
+		line-height: 1
 		color: #202c3c
 		font-size: 14px
 		+tr(color .3s)
@@ -184,15 +202,16 @@ a
 	top: 80px
 	bottom: 0
 	left: 0
+	padding: 40px 0 
 	width: 293px
 	box-shadow: 0 0 6px rgba(#000, .56) 
 	background: url(../img/bg.png) 0 0 repeat
 	&__in
-		padding: 40px 27px
+		padding: 0 27px
 		overflow-y: auto 
 		height: 100%
 	&__list
-		margin: 30px 0 
+		margin: 36px 0 
 		li
 			margin-bottom: 23px
 		a
@@ -209,6 +228,7 @@ a
 			display: inline-block
 			vertical-align: middle
 			position: relative
+			top: -2px
 			em
 				position: absolute
 				top: -11px
@@ -233,14 +253,16 @@ a
 .footer
 	position: relative
 	z-index: 2
-	width: 1500px
-	padding: 76px 0 0 312px
+	padding: 75px 0 0
 	min-height: 420px
 	background: #cfd8e2 
 	+clr
+	&__main
+		padding-left: 340px
+		margin-bottom: 41px
 	&__info
 		float: left
-		margin: 6px 115px 0 0
+		margin: 6px 74px 0 0
 		text-align: center
 	&__logo
 		margin-bottom: 23px
@@ -260,7 +282,8 @@ a
 		padding-right: 25px
 		width: 25%
 	&__list
-		line-height: 2.83
+		li
+			margin-bottom: 16px
 		a
 			font-size: 12px
 			color: $gray_l
@@ -268,8 +291,7 @@ a
 			&:hover
 				color: #000 
 	&__categ
-		margin-bottom: 5px
-		min-height: 40px
+		margin-bottom: 15px
 		a
 			font-size: 14px
 			color: #68717a
@@ -280,6 +302,7 @@ a
 				color: #000 
 		
 	&__meta
+		margin: 0 20px 0 314px
 		border-top: 1px solid #e0e7ee 
 		padding: 20px 0 
 		color: #fff
