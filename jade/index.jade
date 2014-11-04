@@ -5,14 +5,16 @@ html
 		include _head.jade
 		title title
 	body
+		<!-- BEGIN header -->
+		include _header.jade
+		<!-- END header -->
+
+		<!-- BEGIN nav -->
+		include _nav.jade
+		<!-- END nav -->
 
 		<!-- BEGIN out -->
 		.out
-
-			<!-- BEGIN header -->
-			include _header.jade
-			<!-- END header -->
-
 			<!-- BEGIN center -->
 			.l-center
 				<!-- BEGIN banner -->
@@ -487,13 +489,7 @@ html
 												| Новый аппарат предполагается вывести на орбиту с помощью ракеты-носителя Delta IV 
 												| Heavy в декабре 2014 года.
 				<!-- END row -->
-
 			<!-- END center -->
-
-			<!-- BEGIN nav -->
-			include _nav.jade
-			<!-- END nav -->
-
 			.push
 
 		<!-- END out -->
