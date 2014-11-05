@@ -1,5 +1,32 @@
 .breadcrumbs
-	margin: 10px 0 25px 
+	margin: 10px 0 25px
+	a
+		position: relative
+		display: inline-block
+		margin-right: 17px
+		padding: 2px 0 
+		vertical-align: top
+		border-bottom: 3px solid 
+		line-height: 1
+		color: $gray_l
+		font-size: 18px
+		+cond
+		text-transform: uppercase  
+		&:hover
+			color: #000 
+		&.is-active
+			color: #000
+			pointer-events: none
+			border-color: $rose  
+		&:first-child
+			&:before
+				display: none
+		&:before
+			content: ""
+			position: absolute
+			left: -10px
+			top: 9px
+			+svg(angle-r,6,8) 
 .article
 	margin-bottom: 36px
 	img 

@@ -42,6 +42,13 @@ head.ready(function() {
  		//gutter: 20
 	}); 
 
+// add any block
+	$("body").on("click",".js-add-btn",function(){
+		var new_el = $(this).attr("data-hidden");
+		var html = $("."+new_el).html();
+		$(this).before(html);
+		return false;
+	});
 
 
 

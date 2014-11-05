@@ -12,6 +12,17 @@
 	+svg(note,33,38)
 .field
 	display: block
+	margin-bottom: 18px
+	&_inline
+		display: inline-block
+		vertical-align: middle
+	&_cat
+		margin-right: 16px
+		width: 19.6%
+	&_action
+		+clr
+		.btn
+			float: right
 .input
 	display: block
 	padding: 0 12px 
@@ -26,7 +37,12 @@
 		color: $border
 	&:focus
 		border-color: #000
-
+	&_textarea
+		padding: 6px 12px 
+		resize: vertical
+		&.has-fixed-height
+			resize: none
+			height: 182px
 .search-form
 	position: relative
 	.input
@@ -49,6 +65,7 @@
 	text-align: center
 	+cond
 	+tr(color .3s)
+	background: #fff 
 	&:hover
 		color: #000 
 	&:active
@@ -465,3 +482,26 @@
 	+tr(color .3s)
 	&:hover
 		color: $blue 
+
+.btn-add
+	padding: 0 
+	height: 32px
+	background: #fff
+	border: 1px dashed 
+	border-radius: 2px 
+	color: $border
+	font-size: 12px
+	+light
+	+tr(color .3s)
+	&:hover
+		color: #000 
+	i
+		display: inline-block
+		vertical-align: middle
+		width: 30px
+		height: 30px
+		font-size: 24px 
+		font-style: normal
+	span
+		padding-right: 17px
+	
