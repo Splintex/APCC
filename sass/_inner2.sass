@@ -1,16 +1,28 @@
 .breadcrumbs
 	margin: 10px 0 25px 
-.post
+.article
 	margin-bottom: 36px
-	&__img 
-		float: left
-		margin: 0 21px 20px 0
-	&__title
+	img 
+		margin: 0 0 20px 0
+		&[align="left"]
+			margin-right: 20px
+			+ h2
+				position: relative
+				top: -5px
+		&[align="right"]
+			margin-left: 20px
+	h1, h2, h3, h4, h5, h6
 		margin-bottom: 23px 
-		font-size: 16px 
 		+cond
+		font-weight: normal
 		color: #000
-	&__meta
+	h1
+		font-size: 18px
+	h2
+		font-size: 16px 
+	h3, h4, h5, h6
+		font-size: 14px
+	.categ
 		margin-bottom: 26px 
 	p
 		margin-bottom:  28px
@@ -24,9 +36,12 @@
 		border: 1px solid #f8f8f8
 	&__img
 		display: inline-block
-		border: 1px  solid #68717a
-		height: 33px
+		border: 1px solid #68717a
+		height: 34px
 		width: 34px
+		+tr(opacity .3s)
+		&:hover
+			opacity: 0.9
 	&__name
 		display: inline-block
 		vertical-align: middle
