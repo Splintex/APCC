@@ -486,7 +486,7 @@
 .btn-add
 	padding: 0 
 	height: 32px
-	background: #fff
+	background: none
 	border: 1px dashed 
 	border-radius: 2px 
 	color: $border
@@ -504,4 +504,57 @@
 		font-style: normal
 	span
 		padding-right: 17px
-	
+
+.select
+	position: relative
+	font-size: 14px
+	+light
+	&.is-active
+		.select__text
+			color: #000 
+			&:after
+				+arr(10,5,#000,b)
+				+rotate(-180)
+		.select__list
+			+transform(translateY(0))
+			opacity: 1
+	&__text
+		display: block
+		position: relative
+		z-index: 2
+		padding: 0 25px 0 12px 
+		height: 32px
+		line-height: 32px
+		border: 1px solid 
+		color: $border
+		cursor: pointer
+		+tr(border .3s)
+		&:after
+			content: ""
+			position: absolute
+			top: 14px
+			right: 11px 
+			+arr(10,5,$border,b)
+			+transition(transform .3s)
+	&__list
+		position: absolute
+		top: 100%
+		left: 0
+		right: 0
+		margin-top: 1px
+		+transform(translateY(-30px))
+		opacity: 0
+		border: 1px solid #000
+		will-change: opacity, transform
+		+transition(transform .3s, opacity .3s)
+		background: #f9f9f9 
+		a
+			display: block
+			padding: 5px 12px
+			color: #000
+			+tr(color .3s)
+			white-space: nowrap
+			text-overflow: ellipsis
+			overflow: hidden
+			&:hover
+				color: $rose 
