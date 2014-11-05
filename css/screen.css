@@ -109,6 +109,20 @@ a { text-decoration: none; }
 .banner_title .banner__title:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
 .banner_title .banner__title span { vertical-align: middle; font-size: 34px; }
 
+.breadcrumbs { margin: 10px 0 25px; }
+
+.post { margin-bottom: 36px; }
+.post__img { float: left; margin: 0 21px 20px 0; }
+.post__title { margin-bottom: 23px; font-size: 16px; font-family: "robotocondensed-regular", Arial, sans-serif; color: black; }
+.post__meta { margin-bottom: 26px; }
+.post p { margin-bottom: 28px; font-family: "pragmaticalight", Arial, sans-serif; }
+
+.comment { padding: 20px 0 27px; }
+.comment__block { padding: 20px; margin-top: 20px; background-color: #fafafa; border: 1px solid #f8f8f8; }
+.comment__img { display: inline-block; border: 1px solid #68717a; height: 33px; width: 34px; }
+.comment__name { display: inline-block; vertical-align: middle; }
+.comment__meta { display: inline-block; text-align: right; }
+
 .icon-project { background: url('../img/icons-sf3232a1fac.png') 0 -249px no-repeat; width: 33px; height: 28px; }
 
 .icon-event { background: url('../img/icons-sf3232a1fac.png') 0 -147px no-repeat; width: 32px; height: 32px; }
