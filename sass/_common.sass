@@ -93,13 +93,19 @@ a
 	height: auto !important
 	height: 100%	 
 	overflow: hidden 
-	background: #fff 
+	
 .l-center
 	margin: 0 auto 
 	max-width: 1500px
+	background: #fff 
 .push
 	clear: both
 	height: 420px
+.is-remove-ready
+	+transform(translateX(-100px))
+	opacity: 0
+	will-change: transform, opacity
+	+transition(transform .2s, opacity .2s)
 // common blocks      
 
 .header

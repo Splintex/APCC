@@ -41,7 +41,7 @@
 		font-size: 12px 
 		line-height: 1.5
 		&.is-small
-			width: 29.2%
+			width: 29.2% 
 			padding-right: 30px
 
 .banner_title
@@ -57,3 +57,54 @@
 		span
 			vertical-align: middle
 			font-size: 34px
+.banner_static
+	overflow: hidden
+	padding: 37px 22px 34px
+	img
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: auto
+		+r(1500)
+			width: auto
+			height: 100%
+	.banner__title
+		position: static
+		margin: 0 0 13px
+		width: auto
+		text-align: left
+	.banner__box
+		padding: 28px 46px 32px 
+		margin: 0
+		position: relative
+		z-index: 2
+		display: block
+		width: 690px
+
+.sidenav
+	padding: 14px 20px 14px 45px
+	font-size: 18px
+	text-transform: uppercase
+	+cond
+	li
+		margin-bottom: 30px
+		&.is-active
+			a
+				border-color: $rose
+			.btn-more
+				display: block
+
+	a
+		display: inline-block 
+		position: relative
+		border-bottom: 3px solid transparent 
+		color: #000
+		+tr(border .3s)
+		&:hover
+			border-color: $rose
+		.btn-more
+			position: absolute
+			right: -40px
+			top: 3px
+			display: none
