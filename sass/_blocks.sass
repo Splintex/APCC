@@ -8,6 +8,8 @@
 	+s(add)
 .icon-ask
 	+s(ask)
+.icon-note
+	+svg(note,33,38)
 .field
 	display: block
 .input
@@ -403,11 +405,16 @@
 		vertical-align: middle 
 		+svg(close, 10,10)
 
-.masonry-sizer
-	width: 50%
+.masonry
+	margin: 20px 20px 0 0
+	&__sizer
+		width: 50%
+	&__item
+		margin-bottom: 20px
+		+transition(width .3s, height .3s)
 .info-box
-	width: 50%
-	margin: 0 20px 20px 0
+	width: 100%
+	margin: 0
 	border: 1px solid #f8f8f8
 	background: #fafafa
 	color: $gray_l
@@ -427,8 +434,26 @@
 			&:hover
 				opacity: 0.8
 	&__main
+		clear: both
 		border-top: 1px solid #f8f8f8
 		padding: 15px 20px 
+	&__head
+		+clr
+		padding: 20px 20px 0
+		.title-link
+			margin-bottom: 4px
+		.info-box__meta
+			position: relative
+			top: -4px
+		+ .info-box__main
+			padding-top: 6px
+	&__icon
+		float: left
+		padding-right: 5px 
+		width: 50px
+	&__meta
+		overflow: hidden
+
 .title-link
 	display: inline-block
 	margin-bottom: 13px

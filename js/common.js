@@ -37,9 +37,9 @@ head.ready(function() {
 	}); 
 
 	$(".js-masonry").masonry({
- 		itemSelector: '.js-masonry-item',
- 		columnWidth: ".masonry-sizer",
- 		gutter: 20
+ 		itemSelector: '.masonry__item',
+ 		columnWidth: ".masonry__sizer",
+ 		//gutter: 20
 	}); 
 
 
