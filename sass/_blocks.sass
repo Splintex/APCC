@@ -98,7 +98,8 @@
 		font-size: 30px
 	&:hover
 		color: #000 
-
+.item-group
+	margin-bottom: 48px
 .item
 	color: $gray 
 	&__media
@@ -130,7 +131,6 @@
 	&__body	
 		padding: 23px 0 20px 0
 		line-height: 1.4
-		overflow: hidden
 		strong
 			+bold
 			font-weight: normal
@@ -179,6 +179,16 @@
 		padding-top: 0
 .item_short
 	padding: 20px 
+	.item__body
+		overflow: hidden
+.item_small
+	margin: 0 0 32px 
+	.item__body
+		padding: 16px 0 0
+		clear: both
+	.item__title 
+		display: block
+		overflow: hidden
 .categ
 	display: inline-block
 	vertical-align: middle
