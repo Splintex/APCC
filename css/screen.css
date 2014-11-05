@@ -291,7 +291,7 @@ a { text-decoration: none; }
 .info-box__icon { float: left; padding-right: 5px; width: 50px; }
 .info-box__meta { overflow: hidden; }
 
-.title-link { display: inline-block; margin-bottom: 13px; line-height: 1.25; font-size: 16px; font-family: "robotocondensed-regular", Arial, sans-serif; color: black; -moz-transition: color 0.3s; -o-transition: color 0.3s; -webkit-transition: color 0.3s; transition: color 0.3s; }
+.title-link { display: inline-block; margin-bottom: 13px; line-height: 1.25; font-size: 16px; font-family: "robotocondensed-regular", Arial, sans-serif; color: black; word-break: break-all; -moz-transition: color 0.3s; -o-transition: color 0.3s; -webkit-transition: color 0.3s; transition: color 0.3s; }
 .title-link:hover { color: #6d9edc; }
 
 .l-row { padding: 31px 22px; *zoom: 1; }

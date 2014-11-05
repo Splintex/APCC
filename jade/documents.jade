@@ -3,7 +3,7 @@ html
 
 	head
 		include _head.jade
-		title deyatelnost
+		title documents
 	body
 		<!-- BEGIN header -->
 		include _header.jade
@@ -178,62 +178,7 @@ html
 					<!-- BEGIN l-col-small -->
 					.l-col-small
 						.l-col-small__in
-							.item-group
-								.title 
-									a.title__link(href="#") События
-									a.btn-more(href="#")
-								.item.item_small
-									.item__top
-										.item__left
-											.date-box
-												span 29
-												div Октября
-										a.title-link(href="#") НАСА смоделировало первый полет 
-									.item__body
-										p
-											| Новый аппарат предполагается вывести на орбиту с помощью ракеты-носителя Delta IV 
-											| Heavy в декабре 2014 года.
-								.item.item_small
-									.item__top
-										.item__left
-											.date-box
-												span 8
-												div Октября
-										a.title-link(href="#") НАСА смоделировало первый полет 
-									.item__body
-										p
-											| Новый аппарат предполагается вывести на орбиту с помощью ракеты-носителя Delta IV 
-											| Heavy в декабре 2014 года.
-							.item-group
-								.title 
-									a.title__link(href="#") Новости
-									a.btn-more(href="#")
-								.item.item_related
-									.item__body
-										.date
-											span 22   
-											| октября 2014
-										a.title-link(href="#") НАСА смоделировало первый полет многорacазового космического
-										p
-											| Новый аппарат предполагается вывести на орбиту с помощью ракеты-носителя Delta IV 
-											| Heavy в декабре 2014 года.
-									.item__meta
-										a.categ(href="#")
-											| Название категории
-											span 11
-								.item.item_related
-									.item__body
-										.date
-											span 22   
-											| октября 2014
-										a.title-link(href="#") НАСА смоделировало первый полет многорacазового космического
-										p
-											| Новый аппарат предполагается вывести на орбиту с помощью ракеты-носителя Delta IV 
-											| Heavy в декабре 2014 года.
-									.item__meta
-										a.categ(href="#")
-											| Название категории
-											span 11
+							include _sidebar.jade
 					<!-- END l-col-small -->
 
 				<!-- END cols -->
