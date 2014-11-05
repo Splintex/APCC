@@ -49,8 +49,16 @@
 	+tr(color .3s)
 	&:hover
 		color: #000 
+	&:active
+		+transform(translateY(1px))
 	&_medium
 		padding: 4px 30px 
+	&_small
+		font-size: 12px
+		padding: 2px 10px 3px
+	&.to-right
+		float: right
+		
 .title
 	position: relative
 	margin: 0 0 25px 
@@ -97,11 +105,13 @@
 		right: 0
 		font-size: 30px
 	&:hover
-		color: #000 
+		color: $rose
 .item-group
 	margin-bottom: 48px
+
 .item
-	color: $gray 
+	position: relative
+	color: $gray
 	&__media
 		position: relative
 		img
@@ -137,10 +147,19 @@
 		ul
 			margin-bottom: 17px
 			font-size: 12px
+			a
+				color: $blue
+				&:hover
+					text-decoration: underline
 		li
 			margin-bottom: 4px
 		.to-center
 			padding-top: 28px
+		p
+			a
+				color: $blue
+				&:hover
+					text-decoration: underline
 	&__title
 		display: inline-block
 		margin-bottom: 13px
@@ -154,6 +173,20 @@
 	&__meta
 		.categ
 			margin: 0 20px 0 0
+	&__head
+		padding-right: 30px
+		margin-bottom: 16px
+		+clr
+		.time
+			margin-right: 20px
+			vertical-align: middle
+		.item__title
+			margin: 0
+			vertical-align: middle
+	&__btn
+		position: absolute
+		right: 20px
+		bottom: 20px
 	.date
 		margin: 4px 0 8px
 .item_related
@@ -189,6 +222,33 @@
 	.item__title 
 		display: block
 		overflow: hidden
+.item_row
+	margin-bottom: 20px
+	background: #fafafa 
+	font-size: 12px
+	display: table
+	width: 100%
+	table-layout: fixed
+	.item__media
+		display: table-cell
+		vertical-align: top
+		width: 275px
+		overflow: hidden
+		img
+			height: 100%
+			width: auto
+	.item__body
+		display: table-cell
+		vertical-align: top
+		padding: 20px 20px 10px
+		overflow: hidden
+		p
+			margin-bottom: 14px
+		ul
+			width: 50%
+	.btn-close
+		top: 10px
+		right: 10px
 .categ
 	display: inline-block
 	vertical-align: middle
@@ -318,6 +378,7 @@
 	+cond
 	line-height: 1
 	font-size: 12px
+	background: #fafafa 
 	span
 		display: inline-block
 		padding: 2px 0 
@@ -325,3 +386,64 @@
 		+light
 		border-bottom: 3px solid $rose
 		font-size: 36px
+
+.time
+	display: inline-block
+	padding: 4px 6px 2px
+	color: #fff
+	+light_it
+	font-size: 12px  
+	line-height: 1
+	background: #abafb3 
+
+.btn-close
+	position: absolute
+	width: 26px
+	height: 26px
+	text-align: center
+	background: #e9edf3 
+	+tr(background .3s)
+	&:hover
+		background: #e3e3e3 
+	&:before
+		content: ""
+		display: inline-block
+		vertical-align: middle 
+		+svg(close, 10,10)
+
+.masonry-sizer
+	width: 50%
+.info-box
+	width: 50%
+	margin: 0 20px 20px 0
+	border: 1px solid #f8f8f8
+	background: #fafafa
+	color: $gray_l
+	font-size: 12px 
+	&__media
+		padding: 10px 20px 
+		height: 168px
+		line-height: 148px
+		background: #fff
+		text-align: center 
+		img
+			vertical-align: middle
+			max-width: 100%
+			max-height: 100%
+			+tr(opacity .3s)
+			will-change: opacity 
+			&:hover
+				opacity: 0.8
+	&__main
+		border-top: 1px solid #f8f8f8
+		padding: 15px 20px 
+		.title-link
+			margin-bottom: 13px
+.title-link
+	display: inline-block
+	font-size: 16px
+	+cond
+	color: #000
+	+tr(color .3s)
+	&:hover
+		color: $blue 
