@@ -6,7 +6,7 @@
     <meta name="viewport">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/screen.css">
-    <title>ludi</title>
+    <title>no-center-analitic</title>
   </head>
   <body><!-- BEGIN header -->
     <header class="header"><a href="#" class="header__logo"><img src="img/logo.png" alt="img"></a>
@@ -49,9 +49,9 @@
     <!-- BEGIN out --> 
     <div class="out"><!-- BEGIN center -->
       <div class="l-center"><!-- BEGIN banner -->
-        <div class="banner banner_static"><img src="img/banner3.jpg" alt="img">
+        <div class="banner banner_static"><img src="img/banner6.jpg" alt="img">
           <div class="banner__box">
-            <div class="banner__title"><span>Об ассоцации</span></div>
+            <div class="banner__title"><span>Аналитика</span></div>
             <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. </p>Lorem Ipsum является стандартной "рыбой" для текстов на латинице с 
             начала XVI века. В то время некий безымянный печатник 
             создалбольшую коллекцию размеров и форм шрифтов, 
@@ -60,152 +60,109 @@
         </div><!-- END banner -->
         <!-- BEGIN cols -->
         <div class="l-cols"><!-- BEGIN l-col-width -->
-          <div class="l-col-width has-padding">
+          <div class="l-col-width">
             <div class="l-cols">
-              <div class="l-col-small has-blue-bg">
-                <ul class="sidenav">
-                  <li><a href="#">Деятельность</a></li>
-                  <li><a href="#">Руководство<span class="btn-more"></span></a></li>
-                  <li><a href="#">Документы<span class="btn-more"></span></a></li>
-                  <li><a href="#">Члены АРСС<span class="btn-more"></span></a></li>
-                  <li class="is-active"><a href="#">Люди<span class="btn-more"></span></a></li>
-                </ul>
-              </div>
               <div class="l-col-width">
-                <div class="masonry js-masonry">
-                  <div class="masonry__sizer"></div>
-                  <div class="l-col2 masonry__item">
-                    <div class="person">
-                      <div class="person__top">
-                        <div class="person__img"><a href="#"><img src="http://lorempixel.com/75/90/people" alt="img"></a></div>
-                        <div class="person__who"><a href="#" class="title-link">Валерий Зильберман</a>
-                          <div class="person__position">Топ-менеджер </div>
-                          <div class="person__company">“Сигма групп”</div>
-                        </div>
+                <div class="page-top">
+                  <div class="breadcrumbs"><a href="#">НОЦ    </a><a href="#" class="is-active">Статьи</a></div>
+                  <div class="form-item">
+                    <div class="search-form">
+                      <input type="text" placeholder="Поиск" class="input">
+                      <button type="submit" class="search-form__btn"></button>
+                    </div>
+                    <div class="field field_cat">
+                      <div class="select js-select">
+                        <div class="select__text js-select-text">Категория</div>
+                        <ul class="select__list js-select-list">
+                          <li><a href="0">Категория</a></li>
+                          <li><a href="1">Категория1</a></li>
+                          <li><a href="2">Категория2</a></li>
+                          <li><a href="3">Категория3</a></li>
+                        </ul>
+                        <select hidden>
+                          <option value="0">Категория</option>
+                          <option value="1">Категория1</option>
+                          <option value="2">Категория2</option>
+                          <option value="3">Категория3</option>
+                        </select>
                       </div>
-                      <div class="person__btn"><a href="#" class="btn">Написать</a></div>
+                    </div>
+                    <div data-hidden="js-hidden-field" class="field field_inline js-add-btn">
+                      <button class="btn-add"><i>+</i></button>
                     </div>
                   </div>
-                  <div class="l-col2 masonry__item">
-                    <div class="person">
-                      <div class="person__top">
-                        <div class="person__img"><a href="#"><img src="http://lorempixel.com/75/90/people" alt="img"></a></div>
-                        <div class="person__who"><a href="#" class="title-link">Валерий Зильберман</a>
-                          <div class="person__position">Топ-менеджер </div>
-                          <div class="person__company">“Сигма групп”</div>
-                        </div>
+                  <div hidden class="js-hidden-field">
+                    <div class="field field_cat">
+                      <div class="select js-select">
+                        <div class="select__text js-select-text">Категория</div>
+                        <ul class="select__list js-select-list">
+                          <li><a href="0">Категория</a></li>
+                          <li><a href="1">Категория1</a></li>
+                          <li><a href="2">Категория2</a></li>
+                          <li><a href="3">Категория3</a></li>
+                        </ul>
+                        <select hidden>
+                          <option value="0">Категория</option>
+                          <option value="1">Категория1</option>
+                          <option value="2">Категория2</option>
+                          <option value="3">Категория3</option>
+                        </select>
                       </div>
-                      <div class="person__btn"><a href="#" class="btn">Написать</a></div>
                     </div>
                   </div>
-                  <div class="l-col2 masonry__item">
-                    <div class="person">
-                      <div class="person__top">
-                        <div class="person__img"><a href="#"><img src="http://lorempixel.com/75/90/people" alt="img"></a></div>
-                        <div class="person__who"><a href="#" class="title-link">Валерий Зильберман</a>
-                          <div class="person__position">Топ-менеджер </div>
-                          <div class="person__company">“Сигма групп”</div>
-                        </div>
+                </div>
+                <div class="l-col-width__in">
+                  <div class="item item_row">
+                    <div class="item__media"><a href="#"><img src="img/item.jpg" alt="img"></a></div>
+                    <div class="item__body">
+                      <div class="item__head"><a href="#" class="title-link">РАЭК начала разработку правил электронной коммерции</a></div>
+                      <div class="item__main">
+                        <p>Российская ассоциация электронных коммуникаций (РАЭК) начала разработку правил интернет-торговли в рамках недавно созданного кластера «РАЭК/Электронная коммерция».</p>
                       </div>
-                      <div class="person__btn"><a href="#" class="btn">Написать</a></div>
+                      <div class="item__meta"><a href="#" class="categ">Название категории<span>11</span></a><span class="date date_gray"><span>02   </span>октября 2014</span><a href="#" class="user"><i class="icon-user"></i>Иван Иванович</a><a href="#" class="comm-count">20</a></div>
                     </div>
                   </div>
-                  <div class="l-col2 masonry__item">
-                    <div class="person">
-                      <div class="person__top">
-                        <div class="person__img"><a href="#"><img src="http://lorempixel.com/75/90/people" alt="img"></a></div>
-                        <div class="person__who"><a href="#" class="title-link">Валерий Зильберман</a>
-                          <div class="person__position">Топ-менеджер </div>
-                          <div class="person__company">“Сигма групп”</div>
-                        </div>
+                  <div class="item item_row">
+                    <div class="item__media"><a href="#"><img src="img/item.jpg" alt="img"></a></div>
+                    <div class="item__body">
+                      <div class="item__head"><a href="#" class="title-link">РАЭК начала разработку правил электронной коммерции</a></div>
+                      <div class="item__main">
+                        <p>Российская ассоциация электронных коммуникаций (РАЭК) начала разработку правил интернет-торговли в рамках недавно созданного кластера «РАЭК/Электронная коммерция».</p>
                       </div>
-                      <div class="person__btn"><a href="#" class="btn">Написать</a></div>
+                      <div class="item__meta"><a href="#" class="categ">Название категории<span>11</span></a><span class="date date_gray"><span>02   </span>октября 2014</span><a href="#" class="user"><i class="icon-user"></i>Иван Иванович</a><a href="#" class="comm-count">20</a></div>
                     </div>
                   </div>
-                  <div class="l-col2 masonry__item">
-                    <div class="person">
-                      <div class="person__top">
-                        <div class="person__img"><a href="#"><img src="http://lorempixel.com/75/90/people" alt="img"></a></div>
-                        <div class="person__who"><a href="#" class="title-link">Валерий Зильберман</a>
-                          <div class="person__position">Топ-менеджер </div>
-                          <div class="person__company">“Сигма групп”</div>
-                        </div>
+                  <div class="item item_row">
+                    <div class="item__media"><a href="#"><img src="img/item.jpg" alt="img"></a></div>
+                    <div class="item__body">
+                      <div class="item__head"><a href="#" class="title-link">РАЭК начала разработку правил электронной коммерции</a></div>
+                      <div class="item__main">
+                        <p>Российская ассоциация электронных коммуникаций (РАЭК) начала разработку правил интернет-торговли в рамках недавно созданного кластера «РАЭК/Электронная коммерция».</p>
                       </div>
-                      <div class="person__btn"><a href="#" class="btn">Написать</a></div>
+                      <div class="item__meta"><a href="#" class="categ">Название категории<span>11</span></a><span class="date date_gray"><span>02   </span>октября 2014</span><a href="#" class="user"><i class="icon-user"></i>Иван Иванович</a><a href="#" class="comm-count">20</a></div>
                     </div>
                   </div>
-                  <div class="l-col2 masonry__item">
-                    <div class="person">
-                      <div class="person__top">
-                        <div class="person__img"><a href="#"><img src="http://lorempixel.com/75/90/people" alt="img"></a></div>
-                        <div class="person__who"><a href="#" class="title-link">Валерий Зильберман</a>
-                          <div class="person__position">Топ-менеджер </div>
-                          <div class="person__company">“Сигма групп”</div>
-                        </div>
+                  <div class="item item_row">
+                    <div class="item__media"><a href="#"><img src="img/item.jpg" alt="img"></a></div>
+                    <div class="item__body">
+                      <div class="item__head"><a href="#" class="title-link">РАЭК начала разработку правил электронной коммерции</a></div>
+                      <div class="item__main">
+                        <p>Российская ассоциация электронных коммуникаций (РАЭК) начала разработку правил интернет-торговли в рамках недавно созданного кластера «РАЭК/Электронная коммерция».</p>
                       </div>
-                      <div class="person__btn"><a href="#" class="btn">Написать</a></div>
+                      <div class="item__meta"><a href="#" class="categ">Название категории<span>11</span></a><span class="date date_gray"><span>02   </span>октября 2014</span><a href="#" class="user"><i class="icon-user"></i>Иван Иванович</a><a href="#" class="comm-count">20</a></div>
                     </div>
                   </div>
-                  <div class="l-col2 masonry__item">
-                    <div class="person">
-                      <div class="person__top">
-                        <div class="person__img"><a href="#"><img src="http://lorempixel.com/75/90/people" alt="img"></a></div>
-                        <div class="person__who"><a href="#" class="title-link">Валерий Зильберман</a>
-                          <div class="person__position">Топ-менеджер </div>
-                          <div class="person__company">“Сигма групп”</div>
-                        </div>
+                  <div class="item item_row">
+                    <div class="item__media"><a href="#"><img src="img/item.jpg" alt="img"></a></div>
+                    <div class="item__body">
+                      <div class="item__head"><a href="#" class="title-link">РАЭК начала разработку правил электронной коммерции</a></div>
+                      <div class="item__main">
+                        <p>Российская ассоциация электронных коммуникаций (РАЭК) начала разработку правил интернет-торговли в рамках недавно созданного кластера «РАЭК/Электронная коммерция».</p>
                       </div>
-                      <div class="person__btn"><a href="#" class="btn">Написать</a></div>
+                      <div class="item__meta"><a href="#" class="categ">Название категории<span>11</span></a><span class="date date_gray"><span>02   </span>октября 2014</span><a href="#" class="user"><i class="icon-user"></i>Иван Иванович</a><a href="#" class="comm-count">20</a></div>
                     </div>
                   </div>
-                  <div class="l-col2 masonry__item">
-                    <div class="person">
-                      <div class="person__top">
-                        <div class="person__img"><a href="#"><img src="http://lorempixel.com/75/90/people" alt="img"></a></div>
-                        <div class="person__who"><a href="#" class="title-link">Валерий Зильберман</a>
-                          <div class="person__position">Топ-менеджер </div>
-                          <div class="person__company">“Сигма групп”</div>
-                        </div>
-                      </div>
-                      <div class="person__btn"><a href="#" class="btn">Написать</a></div>
-                    </div>
-                  </div>
-                  <div class="l-col2 masonry__item">
-                    <div class="person">
-                      <div class="person__top">
-                        <div class="person__img"><a href="#"><img src="http://lorempixel.com/75/90/people" alt="img"></a></div>
-                        <div class="person__who"><a href="#" class="title-link">Валерий Зильберман</a>
-                          <div class="person__position">Топ-менеджер </div>
-                          <div class="person__company">“Сигма групп”</div>
-                        </div>
-                      </div>
-                      <div class="person__btn"><a href="#" class="btn">Написать</a></div>
-                    </div>
-                  </div>
-                  <div class="l-col2 masonry__item">
-                    <div class="person">
-                      <div class="person__top">
-                        <div class="person__img"><a href="#"><img src="http://lorempixel.com/75/90/people" alt="img"></a></div>
-                        <div class="person__who"><a href="#" class="title-link">Валерий Зильберман</a>
-                          <div class="person__position">Топ-менеджер </div>
-                          <div class="person__company">“Сигма групп”</div>
-                        </div>
-                      </div>
-                      <div class="person__btn"><a href="#" class="btn">Написать</a></div>
-                    </div>
-                  </div>
-                  <div class="l-col2 masonry__item">
-                    <div class="person">
-                      <div class="person__top">
-                        <div class="person__img"><a href="#"><img src="http://lorempixel.com/75/90/people" alt="img"></a></div>
-                        <div class="person__who"><a href="#" class="title-link">Валерий Зильберман</a>
-                          <div class="person__position">Топ-менеджер </div>
-                          <div class="person__company">“Сигма групп”</div>
-                        </div>
-                      </div>
-                      <div class="person__btn"><a href="#" class="btn">Написать</a></div>
-                    </div>
-                  </div>
+                  <div class="pager"><a href="#" class="pager__nav pager__prev is-disabled"></a><a href="#" class="is-active">1</a><a href="#">2</a><a href="#">3</a><a href="#">4</a><a href="#">5</a><a href="#">6</a><a href="#">7</a><a href="#">...</a><a href="#">27</a><a href="#" class="pager__nav pager__next"></a></div>
                 </div>
               </div>
             </div>

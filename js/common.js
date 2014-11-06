@@ -7,17 +7,24 @@ head.ready(function() {
  
 
 // init slick slider
-	$('.js-slick').each(function(){
-        var visible = $(this).attr("data-visible");
-        $(this).slick({
-            dots: false,
-            infinite: false,
-            speed: 300,
-            slidesToShow: visible,
-            slidesToScroll: visible,
-            arrows: true,
-            adaptiveHeight: true
-        });
+    $('.js-slick').slick({
+        dots: false,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        arrows: true,
+        adaptiveHeight: true
+    });
+
+    $('.js-slick-col3').slick({
+        dots: false,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        arrows: true,
+        adaptiveHeight: true
     });
         
 

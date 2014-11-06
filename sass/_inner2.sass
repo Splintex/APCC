@@ -5,7 +5,6 @@
 .breadcrumbs
 	display: inline-block
 	vertical-align: middle
-	
 	a
 		position: relative
 		display: inline-block
@@ -14,10 +13,11 @@
 		vertical-align: top
 		border-bottom: 3px solid 
 		line-height: 1
-		color: $gray_l
+		color: $border
 		font-size: 18px
 		+cond
 		text-transform: uppercase  
+		+tr(color .3s)
 		&:hover
 			color: #000 
 		&.is-active
@@ -35,6 +35,16 @@
 			+svg(angle-r,6,8) 
 .article
 	margin-bottom: 36px
+	.categ
+		margin-bottom: 26px 
+	&__meta
+		margin-bottom: 16px
+		.date,
+		.categ,
+		.user,
+		.comm-counter
+			vertical-align: middle
+			margin: 0 20px 0 0
 	img 
 		margin: 0 0 20px 0
 		&[align="left"]
@@ -55,8 +65,7 @@
 		font-size: 16px 
 	h3, h4, h5, h6
 		font-size: 14px
-	.categ
-		margin-bottom: 26px 
+	
 	p
 		margin-bottom:  28px
 		+light
