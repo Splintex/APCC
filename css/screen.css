@@ -150,9 +150,7 @@ a { text-decoration: none; }
 .user:hover { color: #3a70b4; }
 .user i { display: inline-block; margin: -3px 6px 0 0; vertical-align: middle; }
 
-.page-top { margin: 0 !important; padding: 30px 20px 0; }
-
-.page-top { margin: 10px 0 25px; }
+.page-top { padding: 30px 20px 0; }
 
 .breadcrumbs { display: inline-block; vertical-align: middle; }
 .breadcrumbs a { position: relative; display: inline-block; margin-right: 17px; padding: 2px 0; vertical-align: top; border-bottom: 3px solid; line-height: 1; color: #8a9097; font-size: 18px; font-family: "robotocondensed-regular", Arial, sans-serif; text-transform: uppercase; }
@@ -182,9 +180,10 @@ a { text-decoration: none; }
 
 .person { padding: 0 0 20px 0; background-color: #f8f8f8; }
 .person__top { margin-bottom: 20px; margin-right: 20px; }
-.person__img { float: left; height: 90px; width: 75px; margin-right: 24px; }
+.person__img { float: left; width: 75px; margin-right: 24px; }
+.person__img img { max-width: 100%; }
 .person__who { overflow: hidden; text-align: left; vertical-align: middle; }
-.person__name { display: inline-block; margin-top: 15px; margin-bottom: 21px; font-family: "robotocondensed-regular", Arial, sans-serif; font-size: 16px; color: black; }
+.person .title-link { margin: 15px 0 21px; }
 .person__position { margin-bottom: 11px; font-family: "pragmaticabold", Arial, sans-serif; font-weight: normal; font-size: 12px; color: #7f7f7f; }
 .person__company { font-size: 12px; }
 .person__btn { text-align: center; }
