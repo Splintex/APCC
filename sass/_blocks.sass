@@ -183,9 +183,13 @@
 					text-decoration: underline
 	.title-link
 		margin-bottom: 13px
+	.date
+		margin: 4px 0 8px
 	&__meta
-		.categ
-			margin: 0 20px 0 0
+		.categ,
+		.user,
+		.date
+			margin: 0 20px 0 0 
 	&__head
 		padding-right: 30px
 		margin-bottom: 16px
@@ -200,8 +204,7 @@
 		position: absolute
 		right: 20px
 		bottom: 20px
-	.date
-		margin: 4px 0 8px
+	
 .item_related
 	position: relative
 	padding-left: 30px
@@ -253,7 +256,7 @@
 	.item__body
 		display: table-cell
 		vertical-align: top
-		padding: 20px 20px 10px
+		padding: 20px 20px 20px
 		overflow: hidden
 		p
 			margin-bottom: 14px
@@ -262,6 +265,11 @@
 	.btn-close
 		top: 10px
 		right: 10px
+.categ-wrap
+	margin: 0 0 20px 0 
+	padding-right: 20px
+	.btn-favorite
+		margin-left: 10px
 .categ
 	display: inline-block
 	vertical-align: middle
@@ -286,6 +294,11 @@
 		border: 1px solid #3a70b4
 		background: #fff
 		color: $blue
+	&_gray
+		background: $border 
+		+g($border, #93969a)
+		span
+			border-color: $border 
 
 .comm-count
 	position: relative
@@ -355,6 +368,9 @@
 		padding: 0 3px 
 		background: $rose
 		color: #fff 
+	&_gray	
+		span
+			background: $border 
 		
 .box
 	padding: 24px 20px 
@@ -426,6 +442,8 @@
 
 .masonry
 	margin: 20px 20px 0 0
+	&_mod
+		margin-right: 5px
 	&__sizer
 		width: 50%
 	&__item
@@ -480,7 +498,7 @@
 	font-size: 16px
 	+cond
 	color: #000
-	word-break: break-all
+	//word-break: break-all
 	+tr(color .3s)
 	&:hover
 		color: $blue 
@@ -617,3 +635,43 @@
 		&:hover
 			&:before
 				+arr(6,9,$rose,r) 
+
+.sort
+	display: inline-block
+	margin: -20px 0 20px 
+	padding: 5px 28px 5px 14px 
+	font-size: 12px
+	background: #f8f8f8 
+	&__title,
+	&__item
+		display: inline-block
+		vertical-align: middle
+		color: $border
+	&__item
+		margin-left: 15px
+	a
+		color: $blue
+		+tr(color .3s)
+		&:hover
+			color: $blue_d  
+		&.is-active
+			color: $rose
+			
+.btn-favorite
+	display: inline-block
+	position: relative
+	+s(star)
+	vertical-align: middle
+	&:hover,
+	&.is-active
+		&:before
+			opacity: 1
+	&:before
+		content: ""
+		position: absolute
+		left: 0
+		top: 0 
+		+s(star-hover)
+		opacity: 0
+		will-change: opacity
+		+tr(opacity .3s)

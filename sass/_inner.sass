@@ -126,6 +126,8 @@
 	background: #f8f8f8
 	.input
 		background: #f9f9f9 
+	.search-form
+		width: 238px
 	.search-form,
 	.field
 		display: inline-block
@@ -197,3 +199,41 @@
 		margin: -3px 6px 0 0 
 		vertical-align: middle
 		 
+.comment
+	padding: 20px
+	margin: 20px 0
+	background-color: #fafafa
+	border: 1px solid #f8f8f8
+	&__head
+		position: relative
+		margin-bottom: 15px
+	&__img
+		display: inline-block
+		vertical-align: middle
+		margin-right: 15px
+		border: 1px solid #68717a
+		height: 34px
+		width: 34px
+		+tr(opacity .3s)
+		&:hover
+			opacity: 0.9
+	&__name
+		display: inline-block
+		vertical-align: middle
+		color: $blue
+		+tr(color .3s)
+		&:hover
+			color: $blue_d 
+	&__meta
+		position: absolute
+		right: 0
+		top: 0
+	&__text
+		font-size: 12px
+		color: $gray_l 
+		p
+			margin-bottom: 16px
+	&__action
+		text-align: right
+		.btn
+			min-width: 100px

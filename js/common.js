@@ -7,15 +7,19 @@ head.ready(function() {
  
 
 // init slick slider
-	$('.js-slick').slick({
-		dots: false,
-		infinite: false,
-		speed: 300,
-		slidesToShow: 4,
-		slidesToScroll: 4,
-		arrows: true,
-		adaptiveHeight: true
-	});
+	$('.js-slick').each(function(){
+        var visible = $(this).attr("data-visible");
+        $(this).slick({
+            dots: false,
+            infinite: false,
+            speed: 300,
+            slidesToShow: visible,
+            slidesToScroll: visible,
+            arrows: true,
+            adaptiveHeight: true
+        });
+    });
+        
 
 //init datepicker
 	$(".js-datepicker").datepicker();
@@ -85,17 +89,25 @@ head.ready(function() {
 
 // accordion
     $(".js-accordion-title").on("click", function(){
-    	if ($(this).hasClass("is-active")) {
-    		$(this).removeClass("is-active");
-    		$(this).parents(".js-accordion").find(".js-accordion-body").slideUp(200);
-    	}
-    	else {
-    		$(".js-accordion-title").removeClass("is-active");
-    		$(this).addClass("is-active");
-    		$(".js-accordion-body").slideUp(200);
-    		$(this).parents(".js-accordion").toggleClass("is-active").find(".js-accordion-body").slideDown(200)
-    	}
-    	
+        if ($(this).hasClass("is-active")) {
+            $(this).removeClass("is-active");
+            $(this).parents(".js-accordion").find(".js-accordion-body").slideUp(200);
+        }
+        else {
+            $(".js-accordion-title").removeClass("is-active");
+            $(this).addClass("is-active");
+            $(".js-accordion-body").slideUp(200);
+            $(this).parents(".js-accordion").toggleClass("is-active").find(".js-accordion-body").slideDown(200)
+        }
+        
+        return false;
+    });
+
+// sort
+    $(".js-sort-link").on("click", function(){
+    	$(this).parents(".js-sort").find("a").removeClass("is-active");
+        $(this).addClass("is-active");
+        $(this).parent().find("input").trigger("click");
     	return false;
     });
 
