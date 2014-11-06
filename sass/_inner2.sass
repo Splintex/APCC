@@ -79,3 +79,67 @@
 	&__meta
 		display: inline-block
 		text-align: right
+.person
+	padding: 0 0 20px 0
+	background-color: #F8F8F8
+	&__top
+		margin-bottom: 20px
+		margin-right: 20px
+	&__img
+		float: left
+		height: 90px
+		width: 75px
+		margin-right: 24px
+	&__who
+		overflow: hidden
+		text-align: left
+		vertical-align: middle
+	&__name
+		display: inline-block
+		margin-top: 15px
+		margin-bottom: 21px
+		+cond
+		font-size: 16px
+		color: #000
+		// a
+		// 	display: inline-block
+		// 	margin-top: 15px
+		// 	margin-bottom: 21px
+	&__position
+		margin-bottom: 11px
+		+bold
+		font-weight: normal 
+		font-size: 12px
+		color: #7F7F7F 
+	&__company
+		font-size: 12px
+	&__btn
+		text-align: center
+		a
+			display: inline-block
+			background-color: #F8F8F8  
+.benefit
+	padding: 22px 20px 
+	margin: 20px 
+	background-color: #fafafa
+	border: 1px solid #f8f8f8
+	&__top
+		text-align: left
+		margin-bottom: 20px
+	&__number
+		display: inline-block
+		vertical-align: middle
+		height: 39px
+		width: 39px
+		background-color: $border
+		color: #FFF
+		+light
+		font-size: 26px
+		text-align: center
+		margin-right: 20px 
+	&__title
+		display: inline-block
+		vertical-align: middle
+		+cond
+		color: #000
+		font-size: 16px

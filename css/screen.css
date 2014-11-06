@@ -178,6 +178,21 @@ a { text-decoration: none; }
 .comment__name { display: inline-block; vertical-align: middle; }
 .comment__meta { display: inline-block; text-align: right; }
 
+.person { padding: 0 0 20px 0; background-color: #f8f8f8; }
+.person__top { margin-bottom: 20px; margin-right: 20px; }
+.person__img { float: left; height: 90px; width: 75px; margin-right: 24px; }
+.person__who { overflow: hidden; text-align: left; vertical-align: middle; }
+.person__name { display: inline-block; margin-top: 15px; margin-bottom: 21px; font-family: "robotocondensed-regular", Arial, sans-serif; font-size: 16px; color: black; }
+.person__position { margin-bottom: 11px; font-family: "pragmaticabold", Arial, sans-serif; font-weight: normal; font-size: 12px; color: #7f7f7f; }
+.person__company { font-size: 12px; }
+.person__btn { text-align: center; }
+.person__btn a { display: inline-block; background-color: #f8f8f8; }
+
+.benefit { padding: 22px 20px; margin: 20px; background-color: #fafafa; border: 1px solid #f8f8f8; }
+.benefit__top { text-align: left; margin-bottom: 20px; }
+.benefit__number { display: inline-block; vertical-align: middle; height: 39px; width: 39px; background-color: #abafb3; color: white; font-family: "pragmaticalight", Arial, sans-serif; font-size: 26px; text-align: center; margin-right: 20px; }
+.benefit__title { display: inline-block; vertical-align: middle; font-family: "robotocondensed-regular", Arial, sans-serif; color: black; font-size: 16px; }
+
 .icon-project { background: url('../img/icons-sf3232a1fac.png') 0 -249px no-repeat; width: 33px; height: 28px; }
 
 .icon-event { background: url('../img/icons-sf3232a1fac.png') 0 -147px no-repeat; width: 32px; height: 32px; }
