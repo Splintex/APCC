@@ -10,6 +10,8 @@
 	+s(ask)
 .icon-note
 	+svg(note,33,38)
+.icon-user
+	+svg(user,11,16)
 .field
 	display: block
 	margin-bottom: 18px
@@ -558,3 +560,60 @@
 			overflow: hidden
 			&:hover
 				color: $rose 
+				
+
+.pager
+	margin: 60px 0 35px
+	text-align: center
+	font-size: 0
+	a
+		display: inline-block
+		margin-left: 9px
+		position: relative
+		padding: 0 2px 
+		min-width: 25px
+		height: 25px
+		line-height: 23px
+		vertical-align: middle
+		border: 2px solid transparent
+		font-size: 14px
+		+light
+		text-align: center
+		color: $blue
+		+tr(color .3s)
+		&:first-child
+			margin-left: 0
+		&:hover
+			color: $rose 
+		&.is-active
+			border-color: $rose 
+			color: $rose 
+		&.is-disabled
+			opacity: 0.5
+			pointer-events: none
+		&.pager__nav
+			border-color: $gray_l
+			+tr(border .3s) 
+			&:hover
+				border-color: $rose 
+			&:before
+				content: ""
+				position: absolute
+				+tr(border .3s)
+				
+	&__prev
+		&:before
+			+arr(6,9,$gray_l,l) 
+			left: 7px
+			top: 7px
+		&:hover
+			&:before
+				+arr(6,9,$rose,l) 
+	&__next
+		&:before
+			left: 8px
+			top: 7px
+			+arr(6,9,$gray_l,r) 
+		&:hover
+			&:before
+				+arr(6,9,$rose,r) 

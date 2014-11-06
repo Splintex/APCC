@@ -83,4 +83,20 @@ head.ready(function() {
         
     });
 
+// accordion
+    $(".js-accordion-title").on("click", function(){
+    	if ($(this).hasClass("is-active")) {
+    		$(this).removeClass("is-active");
+    		$(this).parents(".js-accordion").find(".js-accordion-body").slideUp(200);
+    	}
+    	else {
+    		$(".js-accordion-title").removeClass("is-active");
+    		$(this).addClass("is-active");
+    		$(".js-accordion-body").slideUp(200);
+    		$(this).parents(".js-accordion").toggleClass("is-active").find(".js-accordion-body").slideDown(200)
+    	}
+    	
+    	return false;
+    });
+
 });
