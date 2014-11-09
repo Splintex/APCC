@@ -1,0 +1,130 @@
+doctype
+html
+
+	head
+		include _head.jade
+		title usloviya
+	body
+		<!-- BEGIN header -->
+		include _header.jade
+		<!-- END header -->
+
+		<!-- BEGIN nav -->
+		include _nav.jade
+		<!-- END nav -->
+
+		<!-- BEGIN out --> 
+		.out 
+			<!-- BEGIN center -->
+			.l-center
+				<!-- BEGIN banner -->
+				.banner.banner_static
+					img(src="img/banner3.jpg", alt="img")
+					.banner__box
+						.banner__title 
+							span Условия вступления
+						p Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. 
+						| Lorem Ipsum является стандартной "рыбой" для текстов на латинице с 
+						| начала XVI века. В то время некий безымянный печатник 
+						| создалбольшую коллекцию размеров и форм шрифтов, 
+						| используя Lorem Ipsum для распечатки образцов.
+				<!-- END banner -->
+
+				<!-- BEGIN cols -->
+				.l-cols
+					<!-- BEGIN l-col-width -->
+					.l-col-width.has-padding
+						.l-cols
+							.l-col-small.has-blue-bg 
+								ul.sidenav
+									li
+										a(href="#") Преимущества
+									li
+										a(href="#") Правила вступления											
+									li.is-active
+										a(href="#") Условия членства																			
+							.l-col-width
+								table.table
+									tr
+										th Тип компании 
+										th AISC (США) 
+										th УЦСС (Украина)
+										th SCI (UK)
+										th BCSA (UK)
+										th АРСС (Россия)
+									tr
+										td Вступительный взнос 
+										td $550 
+										td $200-$2000
+										td нет
+										td £500 + VAT
+										td $500-$2000
+									tr
+										td(colspan="5") Ежегодные взносы:
+									tr
+										td Производители проката
+										td
+										td
+										td
+										td
+										td
+									tr
+										td Производители металлоконструкций
+										td
+										td
+										td
+										td
+										td
+									tr
+										td Дистрибьютеры/Сервисные центры
+										td
+										td
+										td
+										td
+										td
+									tr
+										td
+										td
+										td
+										td
+										td
+										td
+									tr
+										td
+										td
+										td
+										td
+										td
+										td
+									tr
+										td
+										td
+										td
+										td
+										td
+										td
+									tr
+										td
+										td
+										td
+										td
+										td
+										td
+
+					<!-- END l-col-width -->
+
+					<!-- BEGIN l-col-small -->
+					.l-col-small
+						.l-col-small__in
+							include _sidebar.jade
+					<!-- END l-col-small -->
+
+				<!-- END cols -->
+			<!-- END center -->
+			.push
+
+		<!-- END out -->
+
+		<!-- BEGIN footer -->	
+		include _footer.jade
+		<!-- END footer -->

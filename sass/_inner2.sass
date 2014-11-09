@@ -141,8 +141,8 @@
 .banner
 	&__center
 		text-align: center
-	.banner__title
-		text-align: center
+		.banner__title
+			text-align: center
 	&__left
 		display: inline-block
 		text-align: left
@@ -160,18 +160,22 @@
 				text-decoration: underline
 	&__bottom
 		display: block
+		margin-top: 8px
 	&__more
-		margin: 8px 0 14px
 		display: block
 		color: #FFF
 		text-decoration: underline
 		&:hover
 			text-decoration: none
 	&__btn
+		margin-top: 14px
 		padding: 8px 34px
 		display: inline-block
 		border: 2px solid #fff
 		color: #FFF 
 		font-size: 20px
+		+transition(background .3s, color .3s)
 		+cond
-		
+		&:hover
+			background: #fff
+			color: #000
