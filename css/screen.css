@@ -199,15 +199,16 @@ a { text-decoration: none; }
 .benefit__title { display: inline-block; vertical-align: middle; font-family: "robotocondensed-regular", Arial, sans-serif; color: black; font-size: 16px; }
 
 .banner__center { text-align: center; }
-.banner .banner__title { text-align: center; }
+.banner__center .banner__title { text-align: center; }
 .banner__left { display: inline-block; text-align: left; margin-right: 36px; color: white; font-family: "pragmaticalight", Arial, sans-serif; }
 .banner__right { display: inline-block; text-align: left; color: white; font-family: "pragmaticalight", Arial, sans-serif; }
 .banner__right a { color: white; }
 .banner__right a:hover { text-decoration: underline; }
-.banner__bottom { display: block; }
-.banner__more { margin: 8px 0 14px; display: block; color: white; text-decoration: underline; }
+.banner__bottom { display: block; margin-top: 8px; }
+.banner__more { display: block; color: white; text-decoration: underline; }
 .banner__more:hover { text-decoration: none; }
-.banner__btn { padding: 8px 34px; display: inline-block; border: 2px solid white; color: white; font-size: 20px; font-family: "robotocondensed-regular", Arial, sans-serif; }
+.banner__btn { margin-top: 14px; padding: 8px 34px; display: inline-block; border: 2px solid white; color: white; font-size: 20px; -moz-transition: background 0.3s, color 0.3s; -o-transition: background 0.3s, color 0.3s; -webkit-transition: background 0.3s, color 0.3s; transition: background 0.3s, color 0.3s; font-family: "robotocondensed-regular", Arial, sans-serif; }
+.banner__btn:hover { background: white; color: black; }
 
 .icon-project { background: url('../img/icons-s8420a0b8f9.png') 0 -269px no-repeat; width: 33px; height: 28px; }
 
