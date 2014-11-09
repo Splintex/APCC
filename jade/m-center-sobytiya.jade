@@ -1,0 +1,251 @@
+doctype
+html
+
+	head
+		include _head.jade
+		title m-center-sobytiya
+	body
+		<!-- BEGIN header -->
+		include _header.jade
+		<!-- END header -->
+
+		<!-- BEGIN nav -->
+		include _nav.jade
+		<!-- END nav -->
+
+		<!-- BEGIN out --> 
+		.out 
+			<!-- BEGIN center -->
+			.l-center
+				<!-- BEGIN banner -->
+				.banner.banner_static
+					img(src="img/banner6.jpg", alt="img")
+					.banner__box
+						.banner__title 
+							span События
+						p Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. 
+						| Lorem Ipsum является стандартной "рыбой" для текстов на латинице с 
+						| начала XVI века. В то время некий безымянный печатник 
+						| создалбольшую коллекцию размеров и форм шрифтов, 
+						| используя Lorem Ipsum для распечатки образцов.
+				<!-- END banner -->
+
+				<!-- BEGIN cols -->
+				.l-cols
+					<!-- BEGIN l-col-width -->
+					.l-col-width
+						.l-cols
+							.l-col-width
+								.page-top
+									.breadcrumbs
+										a(href="#") МЦ
+										a(href="#").is-active События
+									.form-item
+										.search-form
+											input.input(type="text" placeholder="Поиск")
+											button.search-form__btn(type="submit")
+										.field.field_cat
+											.select.js-select
+												.select__text.js-select-text Категория
+												ul.select__list.js-select-list
+													li
+														a(href="0") Категория
+													li
+														a(href="1") Категория1
+													li
+														a(href="2") Категория2
+													li
+														a(href="3") Категория3
+												select(hidden)
+													option(value="0") Категория
+													option(value="1") Категория1
+													option(value="2") Категория2
+													option(value="3") Категория3
+										.field.field_inline.js-add-btn(data-hidden="js-hidden-field")
+											button.btn-add
+												i +
+									.js-hidden-field(hidden)
+										.field.field_cat
+											.select.js-select
+												.select__text.js-select-text Категория
+												ul.select__list.js-select-list
+													li
+														a(href="0") Категория
+													li
+														a(href="1") Категория1
+													li
+														a(href="2") Категория2
+													li
+														a(href="3") Категория3
+												select(hidden)
+													option(value="0") Категория
+													option(value="1") Категория1
+													option(value="2") Категория2
+													option(value="3") Категория3
+								.l-col-width__in
+									ul.calendar
+										li.calendar__row.calendar__head
+											.calendar__item
+												| ПН
+											.calendar__item
+												| ВТ
+											.calendar__item
+												| ср
+											.calendar__item
+												| чт
+											.calendar__item
+												| пт
+											.calendar__item
+												| сб
+											.calendar__item
+												| нд
+										li.calendar__row
+											.calendar__item.is-inactive
+												span.calendar__date
+													| 30
+											.calendar__item
+												span.calendar__date
+													| 1 октября
+											.calendar__item
+												span.calendar__date
+													| 2
+											.calendar__item
+												span.calendar__date
+													| 3
+											.calendar__item
+												span.calendar__date
+													| 4
+											.calendar__item
+												span.calendar__date
+													| 5
+											.calendar__item
+												span.calendar__date
+													| 6
+										li.calendar__row
+											.calendar__item
+												span.calendar__date
+													| 7
+												span.calendar__event Всероссийская выставка стали...
+												span.calendar__event Всероссийская выставка стали...
+											.calendar__item
+												span.calendar__date
+													| 8
+											.calendar__item
+												span.calendar__date
+													| 9
+												span.calendar__event Всероссийская выставка стали...
+											.calendar__item
+												span.calendar__date
+													| 10
+											.calendar__item
+												span.calendar__date
+													| 11
+												span.calendar__event Всероссийская выставка стали...
+												span.calendar__event Всероссийская выставка стали...
+											.calendar__item
+												span.calendar__date
+													| 12
+											.calendar__item
+												span.calendar__date
+													| 13
+										li.calendar__row
+											.calendar__item
+												span.calendar__date
+													| 14
+												span.calendar__event Всероссийская выставка стали...
+												span.calendar__event Всероссийская выставка стали...
+											.calendar__item
+												span.calendar__date
+													| 15
+											.calendar__item
+												span.calendar__date
+													| 16
+												span.calendar__event Всероссийская выставка стали...
+											.calendar__item
+												span.calendar__date
+													| 17
+											.calendar__item
+												span.calendar__date
+													| 18
+												span.calendar__event Всероссийская выставка стали...
+												span.calendar__event Всероссийская выставка стали...
+											.calendar__item
+												span.calendar__date
+													| 19
+											.calendar__item
+												span.calendar__date
+													| 20
+										li.calendar__row
+											.calendar__item
+												span.calendar__date
+													| 21
+												span.calendar__event Всероссийская выставка стали...
+												span.calendar__event Всероссийская выставка стали...
+											.calendar__item
+												span.calendar__date
+													| 22
+											.calendar__item
+												span.calendar__date
+													| 23
+												span.calendar__event Всероссийская выставка стали...
+											.calendar__item
+												span.calendar__date
+													| 24
+											.calendar__item
+												span.calendar__date
+													| 25
+												span.calendar__event Всероссийская выставка стали...
+												span.calendar__event Всероссийская выставка стали...
+											.calendar__item
+												span.calendar__date
+													| 26
+											.calendar__item
+												span.calendar__date
+													| 27
+										li.calendar__row
+											.calendar__item
+												span.calendar__date
+													| 28
+												span.calendar__event Всероссийская выставка стали...
+												span.calendar__event Всероссийская выставка стали...
+											.calendar__item
+												span.calendar__date
+													| 29
+											.calendar__item
+												span.calendar__date
+													| 30
+												span.calendar__event Всероссийская выставка стали...
+											.calendar__item
+												span.calendar__date
+													| 31
+											.calendar__item.is-inactive
+												span.calendar__date
+													| 1 ноября
+
+											.calendar__item.is-inactive
+												span.calendar__date
+													| 2
+											.calendar__item.is-inactive
+												span.calendar__date
+													| 3
+									.calendar-nav
+										button.btn-prev
+										span Октябрь
+										button.btn-next
+					<!-- END l-col-width -->
+
+					<!-- BEGIN l-col-small -->
+					.l-col-small
+						.l-col-small__in
+							include _sidebar.jade
+					<!-- END l-col-small -->
+
+				<!-- END cols -->
+			<!-- END center -->
+			.push
+
+		<!-- END out -->
+
+		<!-- BEGIN footer -->	
+		include _footer.jade
+		<!-- END footer -->

@@ -203,3 +203,71 @@
 		position: absolute
 		width: 18px
 		height: 26px
+
+.calendar
+	display: table
+	width: 100%
+	border: 1px solid #f8f8f8
+	table-layout: fixed
+	&__row
+		display: table-row 
+	&__head
+		text-align: center
+		.calendar__item
+			background: #e5e5e5 
+			color: #b0b2b6
+			font-size: 10px
+			height: 40px
+			padding-top: 0
+			vertical-align: middle
+			+light
+			text-transform: uppercase 
+		+ .table__row
+			.table__item
+				border-top: 0
+	&__item
+		display: table-cell
+		position: relative  
+		vertical-align: top
+		border-left: 1px solid #e5e5e5 
+		border-top: 1px solid #e5e5e5 
+		padding: 20px 0 0
+		height: 100px 
+		background: #fafafa 
+		+tr(background .3s)
+		font-size: 11px
+		color: $gray 
+		&:first-child
+			border-left: 0
+		&:hover
+			background: #e2eef3 
+			.calendar__date
+				color: $rose
+		&.is-inactive
+			.calendar__date
+				color: #d4d4d4 
+	&__date
+		font-size: 12px
+		position: absolute
+		right: 0
+		top: 0
+		padding: 4px 
+		+tr(color .3s)
+	&__event
+		display: block
+		margin: 0 0 5px 
+		padding: 2px 8px 
+		background: #f6f6f6
+		
+.calendar-nav
+	margin: 27px 0
+	text-align: center
+	font-size: 0
+	height: 22px
+	line-height: 22px
+	span
+		vertical-align: middle
+		display: inline-block
+		margin: 0 35px
+		color: #6d9edc
+		font-size: 14px 
