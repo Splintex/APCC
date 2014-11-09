@@ -23,11 +23,15 @@
 .ui-datepicker .ui-datepicker-prev
 	left: 0
 	span
-		+arr(9,12,#c4deff,l) 
+		+arr(9,12,#c4deff,l)
+		&:hover
+			+arr(9,12,#fff,l)
 .ui-datepicker .ui-datepicker-next
 	right: 0
 	span
-		+arr(9,12,#c4deff,r) 
+		+arr(9,12,#c4deff,r)
+		&:hover
+			+arr(9,12,#fff,r)
 .ui-datepicker .ui-datepicker-prev,
 .ui-datepicker .ui-datepicker-next
 	position: absolute
@@ -42,6 +46,7 @@
 		left: 50%
 		top: 50%
 		margin: -6px 0 0 -4px
+		+tr(border .3s)
 
 .ui-datepicker .ui-datepicker-title
 	position: relative

@@ -127,15 +127,19 @@
 	.title__link
 		color: #fff
 		border-color: #fff  
+		&:hover
+			border-color: transparent 
 	.btn-more
 		color: #c4deff
+		&:hover
+			color: #fff 
 .title_blue
 	.title__link
 		border-color: $blue_d 
 .btn-more
 	display: inline-block
 	position: relative
-	width: 25px
+	width: 27px
 	height: 24px
 	line-height: 1
 	border: 2px solid
@@ -148,7 +152,7 @@
 		position: absolute
 		top: -14px
 		height: 3px
-		left: -1px
+		left: 0px
 		right: 0
 		font-size: 30px
 	&:hover
@@ -167,9 +171,9 @@
 			height: auto
 			will-change: opacity
 			+tr(opacity .3s)
-			&:hover
-				opacity: 0.9
 		&:hover
+			img
+				opacity: 0.9
 			.item__more
 				opacity: 1
 	&__left
@@ -196,7 +200,9 @@
 			font-size: 12px
 			a
 				color: $blue
+				+tr(color .3s)
 				&:hover
+					color: $rose 
 					text-decoration: underline
 		li
 			margin-bottom: 4px
@@ -205,7 +211,9 @@
 		p
 			a
 				color: $blue
+				+tr(color .3s)
 				&:hover
+					color: $rose 
 					text-decoration: underline
 	.title-link
 		margin-bottom: 13px
@@ -233,7 +241,7 @@
 	
 .item_related
 	position: relative
-	padding-left: 30px
+	padding: 0 10px 0 30px
 	margin-bottom: 31px
 	&:last-child
 		&:before
@@ -339,7 +347,7 @@
 		vertical-align: middle
 		+svg(comment, 17,17)
 	&:hover
-		color: $blue_d 
+		color: $rose
 		 
 
 .slider
@@ -772,7 +780,7 @@
 	position: relative
 	font-size: 12px
 	color: $blue
-	+tr(color .3s)
+	+tr(color .3s) 
 	&:hover
 		color: $rose
 		text-decoration: none 
@@ -823,7 +831,7 @@
 		color: $blue
 		+tr(color .3s)
 		&:hover
-			color: $blue_d 
+			color: $rose
 	&__meta
 		position: absolute
 		right: 0

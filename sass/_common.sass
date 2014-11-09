@@ -281,10 +281,17 @@ a
 		+bold
 		a
 			color: $gray_l
+			+tr(color .3s)
+			&:hover
+				color: $rose 
+
 	&__email
 		font-size: 12px
 		a
 			color: #4382d1
+			+tr(color .3s)
+			&:hover
+				color: $rose 
 	&__nav-wrap
 		overflow: hidden
 	&__nav
@@ -299,17 +306,14 @@ a
 			color: $gray_l
 			+tr(color .3s)
 			&:hover
-				color: #000 
+				color: $rose 
 	&__categ
 		margin-bottom: 15px
 		a
 			font-size: 14px
 			color: #68717a
 			text-transform: uppercase
-			+cond
-			+tr(color .3s)
-			&:hover
-				color: #000 
+			+cond  
 		
 	&__meta
 		margin: 0 20px 0 314px
