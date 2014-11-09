@@ -1,0 +1,367 @@
+doctype
+html
+
+	head
+		include _head.jade
+		title title
+	body
+		<!-- BEGIN header -->
+		include _header.jade
+		<!-- END header -->
+
+		<!-- BEGIN nav -->
+		include _nav.jade
+		<!-- END nav -->
+
+		<!-- BEGIN out -->
+		.out
+			<!-- BEGIN center -->
+			.l-center
+				<!-- BEGIN banner -->
+				.banner.banner_static
+					img(src="img/banner3.jpg", alt="img")
+					.banner__box
+						.banner__title 
+							span Инженерный центр
+						.banner__subtitle О центре 
+						a.btn.to-right(href="#") План работ
+						p Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создалбольшую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.
+
+				<!-- END banner -->
+				.l-cols
+					<!-- BEGIN l-col-width -->
+					.l-col-width
+						<!-- BEGIN row -->
+						.l-row.l-row_mod
+							.title 
+								a.title__link(href="#") Наши эксперты
+							.l-row-in
+								.l-col3
+									.person.person_mod
+										.person__top
+											.person__img
+												a(href="#")
+													img(src="http://lorempixel.com/75/90/people", alt="img")
+											.person__who
+												a.title-link(href="#") Валерий Зильберман
+												.person__position Топ-менеджер 
+												.person__company “Сигма групп”
+										.person__info
+											p Вы никогда не сумеете решить возникшую проблему, если сохраните то же мышление и тот же подход, который привел вас к этой проблеме.
+								.l-col3
+									.person.person_mod
+										.person__top
+											.person__img
+												a(href="#")
+													img(src="http://lorempixel.com/75/90/people", alt="img")
+											.person__who
+												a.title-link(href="#") Валерий Зильберман
+												.person__position Топ-менеджер 
+												.person__company “Сигма групп”
+										.person__info
+											p Вы никогда не сумеете решить возникшую проблему, если сохраните то же мышление и тот же подход, который привел вас к этой проблеме.
+								.l-col3
+									.person.person_mod
+										.person__top
+											.person__img
+												a(href="#")
+													img(src="http://lorempixel.com/75/90/people", alt="img")
+											.person__who
+												a.title-link(href="#") Валерий Зильберман
+												.person__position Топ-менеджер 
+												.person__company “Сигма групп”
+										.person__info
+											p Вы никогда не сумеете решить возникшую проблему, если сохраните то же мышление и тот же подход, который привел вас к этой проблеме.
+						<!-- END row -->
+
+						<!-- BEGIN row -->
+						.l-cols.l-cols_padding
+							.l-col-width
+								.l-row
+									.title 
+										a.title__link(href="#") Проекты
+										a.btn-more(href="#")
+									.l-row-in
+										.l-col2.has-margin
+											.item
+												.item__media
+													a(href="#")
+														img(src="img/item3.jpg", alt="img")
+													a.item__more(href="#")
+												.item__body
+													a.title-link(href="#") Название проекта
+													ul
+														li 
+															strong Описание: 
+															| Выплавка стали
+														li 
+															strong Владелец: 
+															| User1
+														li 
+															strong Участники: 
+															| User1, User2, User3, User1, User2
+												.item__meta
+													a.categ(href="#")
+														| Название категории
+														span 11
+													span.comm-count 33
+										.l-col2.has-margin
+											.item
+												.item__media
+													a(href="#")
+														img(src="img/item3.jpg", alt="img")
+													a.item__more(href="#")
+												.item__body
+													a.title-link(href="#") Название проекта
+													ul
+														li 
+															strong Описание: 
+															| Выплавка стали
+														li 
+															strong Владелец: 
+															| User1
+														li 
+															strong Участники: 
+															| User1, User2, User3, User1, User2
+												.item__meta
+													a.categ(href="#")
+														| Название категории
+														span 11
+													span.comm-count 33
+										.l-col2.has-margin
+											.item
+												.item__media
+													a(href="#")
+														img(src="img/item3.jpg", alt="img")
+													a.item__more(href="#")
+												.item__body
+													a.title-link(href="#") Название проекта
+													ul
+														li 
+															strong Описание: 
+															| Выплавка стали
+														li 
+															strong Владелец: 
+															| User1
+														li 
+															strong Участники: 
+															| User1, User2, User3, User1, User2
+												.item__meta
+													a.categ(href="#")
+														| Название категории
+														span 11
+													span.comm-count 33
+										.l-col2.has-margin
+											.item
+												.item__media
+													a(href="#")
+														img(src="img/item3.jpg", alt="img")
+													a.item__more(href="#")
+												.item__body
+													a.title-link(href="#") Название проекта
+													ul
+														li 
+															strong Описание: 
+															| Выплавка стали
+														li 
+															strong Владелец: 
+															| User1
+														li 
+															strong Участники: 
+															| User1, User2, User3, User1, User2
+												.item__meta
+													a.categ(href="#")
+														| Название категории
+														span 11
+													span.comm-count 33
+							.l-col-small.has-bg
+								.box
+									.title.title_white
+										a.title__link(href="#") Категории
+										a.btn-more(href="#")
+									ul.box__list
+										li
+											a(href="#") 
+												| Кровля и фасады
+												span 6
+										li
+											a(href="#") 
+												| ЛСТК
+												span 6
+										li
+											a(href="#") 
+												| Монтаж
+												span 6
+										li
+											a(href="#") 
+												| МФК
+												span 6
+										li
+											a(href="#") 
+												| Огнезащита
+												span 6
+										li
+											a(href="#") 
+												| Офисы
+												span 6
+										li
+											a(href="#") 
+												| Проектирование
+												span 6
+										li
+											a(href="#") 
+												| Производство
+												span 6
+										li
+											a(href="#") 
+												| Реконструкция
+												span 6
+										li
+											a(href="#") 
+												| Технологии
+												span 6
+						<!-- END row -->
+
+						<!-- BEGIN row -->
+						.l-cols.l-cols_padding
+							.l-col-width
+								.l-row
+									.title
+										a.title__link(href="#") Кейсы
+										a.btn-more(href="#")
+									.l-row-in
+										.slider
+											.js-slick-col2
+												.l-col2
+													.item
+														.item__media
+															a(href="#")
+																img(src="img/item.jpg", alt="img")
+															a.item__more(href="#")
+														.item__body
+															a.title-link(href="#") Помощь в подборе и покупке оборудования
+															p
+																| Новый аппарат предполагается вывести на орбиту с помощью ракеты-носителя Delta IV 
+																| Heavy в декабре 2014 года.
+												.l-col2
+													.item
+														.item__media
+															a(href="#")
+																img(src="img/item.jpg", alt="img")
+															a.item__more(href="#")
+														.item__body
+															a.title-link(href="#") Помощь в подборе и покупке оборудования
+															p
+																| Новый аппарат предполагается вывести на орбиту с помощью ракеты-носителя Delta IV 
+																| Heavy в декабре 2014 года.
+												.l-col2
+													.item
+														.item__media
+															a(href="#")
+																img(src="img/item.jpg", alt="img")
+															a.item__more(href="#")
+														.item__body
+															a.title-link(href="#") Помощь в подборе и покупке оборудования
+															p
+																| Новый аппарат предполагается вывести на орбиту с помощью ракеты-носителя Delta IV 
+																| Heavy в декабре 2014 года.
+												.l-col2
+													.item
+														.item__media
+															a(href="#")
+																img(src="img/item.jpg", alt="img")
+															a.item__more(href="#")
+														.item__body
+															a.title-link(href="#") Помощь в подборе и покупке оборудования
+															p
+																| Новый аппарат предполагается вывести на орбиту с помощью ракеты-носителя Delta IV 
+																| Heavy в декабре 2014 года.
+												.l-col2
+													.item
+														.item__media
+															a(href="#")
+																img(src="img/item.jpg", alt="img")
+															a.item__more(href="#")
+														.item__body
+															a.title-link(href="#") Помощь в подборе и покупке оборудования
+															p
+																| Новый аппарат предполагается вывести на орбиту с помощью ракеты-носителя Delta IV 
+																| Heavy в декабре 2014 года.
+												.l-col2
+													.item
+														.item__media
+															a(href="#")
+																img(src="img/item.jpg", alt="img")
+															a.item__more(href="#")
+														.item__body
+															a.title-link(href="#") Помощь в подборе и покупке оборудования
+															p
+																| Новый аппарат предполагается вывести на орбиту с помощью ракеты-носителя Delta IV 
+																| Heavy в декабре 2014 года.
+												.l-col2
+													.item
+														.item__media
+															a(href="#")
+																img(src="img/item.jpg", alt="img")
+															a.item__more(href="#")
+														.item__body
+															a.title-link(href="#") Помощь в подборе и покупке оборудования
+															p
+																| Новый аппарат предполагается вывести на орбиту с помощью ракеты-носителя Delta IV 
+																| Heavy в декабре 2014 года.
+												.l-col2
+													.item
+														.item__media
+															a(href="#")
+																img(src="img/item.jpg", alt="img")
+															a.item__more(href="#")
+														.item__body
+															a.title-link(href="#") Помощь в подборе и покупке оборудования
+															p
+																| Новый аппарат предполагается вывести на орбиту с помощью ракеты-носителя Delta IV 
+																| Heavy в декабре 2014 года.
+							.l-col-small.has-blue-bg
+								.box
+									.title
+										a.title__link(href="#") Объекты
+										a.btn-more(href="#")
+								a.map-banner(href="#")
+									img(src="img/map-small.png", alt="img")
+						.l-cols.l-cols_margin
+							.l-col-width
+								.l-col-width__in
+									.l-row-in
+										.l-col2
+											.info-box.info-box_blue
+												.title 
+													a.title__link(href="#") Задать вопрос
+												.info-box__img
+													img(src="img/wtf.png", alt="img")
+												.info-box__main
+													p Российская ассоциация электронных коммуникаций (РАЭК) начала разработку правил интернет-торговли в рамках недавно созданного кластера «РАЭК/Электронная коммерция». Об этом говорится в сообщении ассоциации.
+										.l-col2
+												.info-box.info-box_blue
+													.info-box__head
+														.title 
+															a.title__link(href="#") Задать вопрос
+														.info-box__meta
+															a.title-link(href="#") Заголовок блока
+													.info-box__main
+														p Российская ассоциация электронных коммуникаций (РАЭК) начала разработку правил интернет-торговли в рамках недавно созданного кластера «РАЭК/Электронная коммерция». Об этом говорится в сообщении ассоциации.
+						<!-- END row -->
+					<!-- END l-col-width -->
+
+					<!-- BEGIN l-col-small -->
+					.l-col-small
+						.l-col-small__in
+							include _sidebar.jade
+					<!-- END l-col-small -->
+
+			<!-- END center -->
+			.push
+
+		<!-- END out -->
+
+		<!-- BEGIN footer -->	
+		include _footer.jade
+		<!-- END footer -->

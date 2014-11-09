@@ -13,6 +13,8 @@
 		width: 100%
 		&:after
 			display: none
+	&_mod
+		padding-right: 5px
 .l-cell-big,
 .l-cell-small
 	display: table-cell
@@ -53,6 +55,8 @@
 	padding-left: 20px
 	float: left
 	width: 50%
+	&.has-margin
+		margin-bottom: 56px
 .l-col1
 	position: relative
 	padding-left: 20px
@@ -64,6 +68,11 @@
 	display: table
 	width: 100%
 	table-layout: fixed
+	&_margin	
+		margin: -30px 0 0 
+	&_padding
+		padding-right: 20px
+		padding-bottom: 20px
 .l-col-width
 	display: table-cell
 	vertical-align: top
@@ -82,6 +91,8 @@
 		background: none
 	&.has-blue-bg
 		background: #e2eef3 
+	&.has-bg
+		background: #4382d1
 	&__in 
 		padding: 30px 20px 
 .l-col-right
