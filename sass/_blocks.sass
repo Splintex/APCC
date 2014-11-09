@@ -12,6 +12,12 @@
 	+svg(note,33,38)
 .icon-user
 	+svg(user,11,16)
+.icon-user-gray
+	+svg(user-gray,11,16)
+.icon-money
+	+svg(money,14,16)
+.icon-clock
+	+svg(clock,15,15)
 .icon-marker
 	+svg(marker-gray,25,37)
 .icon-camera
@@ -476,6 +482,9 @@
 			display: inline
 		ul
 			margin-top: 8px 
+	&_event
+		font-size: 14px
+		color: $gray
 	ul
 		margin-bottom: 17px
 		font-size: 12px
@@ -525,6 +534,7 @@
 		overflow: hidden
 	.icon-camera
 		margin-left: 5px
+		 
 
 .title-link
 	display: inline-block
@@ -795,3 +805,81 @@
 		z-index: 2
 		display: block 
 		width: 690px
+.user
+	display: inline-block
+	position: relative
+	font-size: 12px
+	color: $blue
+	+tr(color .3s)
+	&:hover
+		color: $rose
+		text-decoration: none 
+	i
+		display: inline-block
+		margin: -3px 8px 0 0 
+		vertical-align: middle
+.time-interval
+	display: inline-block
+	position: relative
+	font-size: 12px
+	color: $blue
+	i
+		display: inline-block
+		margin: -2px 3px 0 0 
+		vertical-align: middle
+.money
+	display: inline-block
+	position: relative
+	font-size: 12px
+	color: $blue
+	i
+		display: inline-block
+		margin: -2px 3px 0 0 
+		vertical-align: middle
+		 
+.comment
+	padding: 20px
+	margin: 20px 0
+	background-color: #fafafa
+	border: 1px solid #f8f8f8
+	&__head
+		position: relative
+		margin-bottom: 15px
+	&__img
+		display: inline-block
+		vertical-align: middle
+		margin-right: 15px
+		border: 1px solid #68717a
+		height: 34px
+		width: 34px
+		+tr(opacity .3s)
+		&:hover
+			opacity: 0.9
+	&__name
+		display: inline-block
+		vertical-align: middle
+		color: $blue
+		+tr(color .3s)
+		&:hover
+			color: $blue_d 
+	&__meta
+		position: absolute
+		right: 0
+		top: 0
+	&__text
+		font-size: 12px
+		color: $gray_l 
+		p
+			margin-bottom: 16px
+	&__action
+		text-align: right
+		.btn
+			min-width: 100px
+			
+.meta-info
+	margin: 13px 0 0 
+	.icon-user-gray
+		margin-left: 2px
+	li
+		position: relative
+		margin-bottom: 6px
