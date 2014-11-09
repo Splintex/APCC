@@ -93,7 +93,8 @@ a
 	height: auto !important
 	height: 100%	 
 	overflow: hidden 
-	
+	+r(1500)
+		padding-left: 240px
 .l-center
 	margin: 0 auto 
 	max-width: 1500px
@@ -210,12 +211,13 @@ a
 	top: 80px
 	bottom: 0
 	left: 0
-	padding: 40px 0 
 	width: 293px
 	box-shadow: 0 0 6px rgba(#000, .56) 
 	background: url(../img/bg.png) 0 0 repeat
+	+r(1500)
+		width: 240px
 	&__in
-		padding: 0 27px
+		padding: 40px 27px
 		overflow-y: auto 
 		height: 100%
 	&__list
@@ -231,7 +233,7 @@ a
 			font-size: 14px 
 			+tr(color .3s)
 			&:hover
-				color: #000 
+				color: $rose
 		i
 			display: inline-block
 			vertical-align: middle
