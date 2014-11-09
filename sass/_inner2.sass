@@ -180,13 +180,14 @@
 			background: #fff
 			color: #000
 .table
-	margin: 20px 20px 15px
+	margin: 0 0 15px
 	font-size: 11px
 	text-align: center
 	border-spacing: 2px
 	border-collapse: separate
 	+light
-	+box
+	+r(1500)
+		word-break: break-all
 	th, td
 		padding: 15px 10px
 		color: #8a9097 
@@ -198,15 +199,17 @@
 				background: #EFEFEF 
 			&:last-child
 				background: #e2eef3
+				color: $gray 
+		td
+			&:first-child
+				text-align: left
 	thead
 		tr
 			background: $border
 		th
 			color: #fff
 			font-weight: normal
-	&__ta-left
-		max-width: 143px 
-		text-align: left
+		
 	&__name
 		font-weight: normal 
 		font-size: 12px
