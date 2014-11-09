@@ -158,6 +158,9 @@ a { text-decoration: none; }
 .article h2 { font-size: 16px; }
 .article h3, .article h4, .article h5, .article h6 { font-size: 14px; }
 .article p { margin-bottom: 28px; font-family: "pragmaticalight", Arial, sans-serif; }
+.article strong, .article b { font-weight: normal; font-family: "pragmaticabold", Arial, sans-serif; }
+.article_gray { padding: 20px; margin: 0 0 20px; background-color: #fafafa; border: solid 1px #f8f8f8; }
+.article ol { list-style-type: decimal; margin: 0 0 15px 20px; }
 
 .person { padding: 0 0 20px 0; background-color: #f8f8f8; }
 .person__top { margin-bottom: 20px; margin-right: 20px; }
