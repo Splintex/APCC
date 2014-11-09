@@ -3,7 +3,7 @@ html
 
 	head
 		include _head.jade
-		title i-center-project
+		title i-center-project-obsujd
 	body
 		<!-- BEGIN header -->
 		include _header.jade
@@ -32,39 +32,13 @@ html
 							.l-col-width
 								.page-top
 									.breadcrumbs
-										a(href="#") ИЦ        
+										a(href="#") ИЦ   
 										a(href="#") Проекты
-										a(href="#").is-active Название проекта
+										a(href="#") Название проекта
+										a(href="#").is-active обсуждение проекта
 								.l-col-width__in
-									.article
-										.box.box_gray.box_right
-											.title.title_blue
-												a.title__link(href="#") Документы
-												a.btn-more(href="#")
-											.info-box.info-box_internal
-												.info-box__head
-													.info-box__icon
-														i.icon-note
-													.info-box__meta
-														a.title-link(href="#") Название документа
-														.date 22 октября 2014
-												.info-box__main
-													p Это становится особенно актуальным при доставке крупных партий чермета
-											.info-box.info-box_internal
-												.info-box__head
-													.info-box__icon
-														i.icon-note
-													.info-box__meta
-														a.title-link(href="#") Документы, необходимые для получения
-														.date 22 октября 2014
-												.info-box__main
-													p Это становится особенно актуальным при доставке крупных партий чермета
-										img(src="http://lorempixel.com/276/170/", alt="img", align="left")
-										p Химическое соединение спонтанно ускоряет циркулирующий сверхпроводник. Примесь, несмотря на внешние воздействия, излучает межатомный кристалл. Очевидно, что сверхпроводник представляет собой газ.
-										p е только в вакууме, но и в любой нейтральной среде относительно низкой плотности квантовое состояние коаксиально восстанавливает барионный солитон. При погружении в жидкий кислород электрон мономолекулярно трансформирует гидродинамический удар. Плазменное образование потенциально. Самосогласованная модель предсказывает, что при определенных условиях осциллятор полупрозрачен для жесткого излучения.
-										p В литературе неоднократно описано, как гамма-квант инвариантен относительно сдвига. 
-										h2 Участники:	
 									.box.box_gray
+										.box__title Участники:
 										.user-box
 											a(href="#").user-box__link
 												.user-box__img
@@ -83,6 +57,23 @@ html
 															i.icon-email
 															| Ivan@site.ru
 
+										.user-box
+											a(href="#").user-box__link
+												.user-box__img
+													img(src="http://lorempixel.com/32/32/people", alt="img" height="32")
+												.user-box__name Иван Иванович
+											.user-box__popup
+												.user-box__info
+													| Топ-менеджер 
+													span “Сигма групп”
+												ul.meta-info
+													li 
+														i.icon-tel 
+														| +7 910 987 54 32
+													li 
+														a(href="mailto:Ivan@site.ru") 
+															i.icon-email
+															| Ivan@site.ru
 										.user-box
 											a(href="#").user-box__link
 												.user-box__img
@@ -120,6 +111,17 @@ html
 										button.btn-add.btn-add_white
 											i +
 											span Пригласить еще
+									.comment
+										.comment__head
+											a.comment__img(href="#")
+												img(src="http://lorempixel.com/32/32/people", alt="img")
+											a.comment__name(href="#") Иван Иванович
+											.comment__meta
+												.date 22 октября 2014
+										.comment__text
+											p Новый аппарат предполагается вывести на орбиту с помощью ракеты-носителя Delta IV Heavy в декабре 2014 года. Первые испытания корабля Orion включают в себя его полет на высоте менее шести тысяч километров над поверхностью Земли в течение 4,5 часов.
+										.comment__action
+											a.btn.btn_small(href="#") Ответить
 									.comment
 										.comment__head
 											a.comment__img(href="#")

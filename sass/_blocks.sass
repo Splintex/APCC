@@ -32,6 +32,10 @@
 		+svg(camera-h,18,15)
 		will-change: opacity
 		+tr(opacity .3s)
+.icon-tel
+	+svg(tel,14,14)
+.icon-email
+	+s(email)
 .field
 	display: block
 	margin-bottom: 18px
@@ -427,6 +431,13 @@
 		float: right
 		width: 275px
 		margin: 0 0 20px 20px 
+	&__title
+		margin: 0 0 8px
+		font-size: 16px
+		+cond
+		color: #000 
+		&:first-child
+			margin-top: -15px
 .date-box
 	border: 1px solid #e7e7e7
 	padding: 4px 0 8px
@@ -748,90 +759,7 @@
 		will-change: opacity
 		+tr(opacity .3s)
 
-.banner
-	display: block
-	position: relative
-	color: #fff 
-	img
-		display: block
-		width: 100% 
-		height: auto
-	&__title
-		position: absolute
-		font-size: 34px
-		top: 24%
-		left: 50%
-		right: 0
-		margin-left: -300px
-		width: 600px
-		line-height: 1.3
-		text-transform: uppercase
-		text-align: center
-		letter-spacing: .4px
-		+r(1400)
-			top: 12% 
-		strong
-			font-weight: normal
-			display: block
-			+bold
-	&__info
-		position: absolute
-		left: 0
-		width: 100%
-		bottom: 12%
-		padding-left: 10px
-		+clr
-	&__box
-		float: left
-		margin-left: 51px
-		padding: 36px 46px 61px
-		width: 57.5%
-		background: rgba(#202c3c, .3) 
-		color: #fff
-		font-size: 12px 
-		line-height: 1.5
-		&.is-small
-			width: 29.2% 
-			padding-right: 30px
 
-.banner_title
-	.banner__title
-		position: absolute
-		top: 0
-		left: 0
-		bottom: 0
-		padding-left: 22px
-		+vertical
-		text-align: left
-		margin: 0
-		span
-			vertical-align: middle
-			font-size: 34px
-
-.banner_static
-	overflow: hidden
-	padding: 37px 22px 34px
-	img
-		position: absolute
-		top: 0
-		left: 0
-		width: 100%
-		height: auto
-		+r(1500) 
-			width: auto
-			height: 100%
-	.banner__title
-		position: static
-		margin: 0 0 13px
-		width: auto
-		text-align: left
-	.banner__box
-		padding: 28px 46px 32px 
-		margin: 0
-		position: relative
-		z-index: 2
-		display: block 
-		width: 690px
 .user
 	display: inline-block
 	position: relative
@@ -910,21 +838,41 @@
 	li
 		position: relative
 		margin-bottom: 6px
-		
+	.icon-tel,
+	.icon-email
+		margin-right: 5px
+		display: inline-block
+	a
+		color: $blue
+		+tr(color .3s)
+		&:hover
+			color: $rose 
+			
 .user-box
 	display: inline-block
+	position: relative
+	z-index: 2
 	vertical-align: middle
 	margin-right: 10px
-	padding-right: 14px
-	background: #93969a 
-	+g(#abafb3, #93969a)
 	font-size: 12px
-	color: #fff 
 	white-space: nowrap
-	+tr(opacity .3s)
-	will-cjange: opacity
 	&:hover
-		opacity: 0.8
+		.user-box__link
+			background: #4381d0 
+			+g(#4381d0, #3a6fb3)
+		.user-box__img
+			border-color: #4381d0 
+		.user-box__popup
+			opacity: 1
+			visibility: visible
+	&__link
+		display: block
+		position: relative 
+		z-index: 2
+		padding-right: 14px
+		color: #fff 
+		background: #93969a 
+		+g(#abafb3, #93969a)
 	&__img
 		display: inline-block
 		vertical-align: middle
@@ -937,3 +885,26 @@
 	&__name
 		display: inline-block
 		vertical-align: middle
+	&__popup
+		position: absolute
+		left: -5px
+		top: -5px
+		right: -5px
+		padding: 47px 0 6px
+		background: #fff
+		visibility: hidden
+		opacity: 0
+		border: 1px solid #4381d0
+		box-shadow: 0 0 5px rgba(#000,.35) 
+		+tr(opacity .3s)
+		will-cjange: opacity
+	&__info
+		color: $gray
+		font-size: 12px 
+		text-align: center
+		span
+			display: block
+			color: $border 
+	.meta-info
+		margin-top: 23px
+		padding-left: 18px
