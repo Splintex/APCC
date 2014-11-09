@@ -1,0 +1,174 @@
+doctype
+html
+
+	head
+		include _head.jade
+		title i-center-project
+	body
+		<!-- BEGIN header -->
+		include _header.jade
+		<!-- END header -->
+
+		<!-- BEGIN nav -->
+		include _nav.jade
+		<!-- END nav -->
+
+		<!-- BEGIN out --> 
+		.out 
+			<!-- BEGIN center -->
+			.l-center
+				<!-- BEGIN banner -->
+				.banner.banner_title
+					img(src="img/banner8.jpg", alt="img")
+					.banner__title 
+						span Проекты
+				<!-- END banner -->
+
+				<!-- BEGIN cols -->
+				.l-cols
+					<!-- BEGIN l-col-width -->
+					.l-col-width
+						.l-cols
+							.l-col-width
+								.page-top
+									.breadcrumbs
+										a(href="#") ИЦ        
+										a(href="#") Проекты
+										a(href="#").is-active Название проекта
+									.form-item
+										.search-form
+											input.input(type="text" placeholder="Поиск")
+											button.search-form__btn(type="submit")
+										.field.field_cat
+											.select.js-select
+												.select__text.js-select-text Категория
+												ul.select__list.js-select-list
+													li
+														a(href="0") Категория
+													li
+														a(href="1") Категория1
+													li
+														a(href="2") Категория2
+													li
+														a(href="3") Категория3
+												select(hidden)
+													option(value="0") Категория
+													option(value="1") Категория1
+													option(value="2") Категория2
+													option(value="3") Категория3
+										.field.field_inline.js-add-btn(data-hidden="js-hidden-field")
+											button.btn-add
+												i +
+									.js-hidden-field(hidden)
+										.field.field_cat
+											.select.js-select
+												.select__text.js-select-text Категория
+												ul.select__list.js-select-list
+													li
+														a(href="0") Категория
+													li
+														a(href="1") Категория1
+													li
+														a(href="2") Категория2
+													li
+														a(href="3") Категория3
+												select(hidden)
+													option(value="0") Категория
+													option(value="1") Категория1
+													option(value="2") Категория2
+													option(value="3") Категория3
+								.l-col-width__in
+									.article
+										.box.box_gray.box_right
+											.title.title_blue
+												a.title__link(href="#") Документы
+												a.btn-more(href="#")
+											.info-box.info-box_internal
+												.info-box__head
+													.info-box__icon
+														i.icon-note
+													.info-box__meta
+														a.title-link(href="#") Название документа
+														.date 22 октября 2014
+												.info-box__main
+													p Это становится особенно актуальным при доставке крупных партий чермета
+											.info-box.info-box_internal
+												.info-box__head
+													.info-box__icon
+														i.icon-note
+													.info-box__meta
+														a.title-link(href="#") Документы, необходимые для получения
+														.date 22 октября 2014
+												.info-box__main
+													p Это становится особенно актуальным при доставке крупных партий чермета
+										img(src="http://lorempixel.com/276/170/", alt="img", align="left")
+										p Химическое соединение спонтанно ускоряет циркулирующий сверхпроводник. Примесь, несмотря на внешние воздействия, излучает межатомный кристалл. Очевидно, что сверхпроводник представляет собой газ.
+										p е только в вакууме, но и в любой нейтральной среде относительно низкой плотности квантовое состояние коаксиально восстанавливает барионный солитон. При погружении в жидкий кислород электрон мономолекулярно трансформирует гидродинамический удар. Плазменное образование потенциально. Самосогласованная модель предсказывает, что при определенных условиях осциллятор полупрозрачен для жесткого излучения.
+										p В литературе неоднократно описано, как гамма-квант инвариантен относительно сдвига. 
+										h2 Участники:	
+									.box.box_gray
+										a.user-box(href="#")
+											.user-box__img
+												img(src="http://lorempixel.com/32/32/people", alt="img" height="32")
+											.user-box__name Иван Иванович
+										a.user-box(href="#")
+											.user-box__img
+												img(src="http://lorempixel.com/32/32/people", alt="img" height="32")
+											.user-box__name Алексей Борисов
+										a.user-box(href="#")
+											.user-box__img
+												img(src="http://lorempixel.com/32/32/people", alt="img" height="32")
+											.user-box__name Иван Иванович
+										button.btn-add.btn-add_white
+											i +
+											span Пригласить еще
+									.comment
+										.comment__head
+											a.comment__img(href="#")
+												img(src="http://lorempixel.com/32/32/people", alt="img")
+											a.comment__name(href="#") Иван Иванович
+											.comment__meta
+												.date 22 октября 2014
+										.comment__text
+											p Новый аппарат предполагается вывести на орбиту с помощью ракеты-носителя Delta IV Heavy в декабре 2014 года. Первые испытания корабля Orion включают в себя его полет на высоте менее шести тысяч километров над поверхностью Земли в течение 4,5 часов.
+										.comment__action
+											a.btn.btn_small(href="#") Ответить
+									.comment
+										.comment__head
+											a.comment__img(href="#")
+												img(src="http://lorempixel.com/32/32/people", alt="img")
+											a.comment__name(href="#") Иван Иванович
+											.comment__meta
+												.date 22 октября 2014
+										.comment__text
+											p Новый аппарат предполагается вывести на орбиту с помощью ракеты-носителя Delta IV Heavy в декабре 2014 года. Первые испытания корабля Orion включают в себя его полет на высоте менее шести тысяч километров над поверхностью Земли в течение 4,5 часов.
+										.comment__action
+											a.btn.btn_small(href="#") Ответить
+									.comment
+										.comment__head
+											a.comment__img(href="#")
+												img(src="http://lorempixel.com/32/32/people", alt="img")
+											a.comment__name(href="#") Иван Иванович
+											.comment__meta
+												.date 22 октября 2014
+										.comment__text
+											p Новый аппарат предполагается вывести на орбиту с помощью ракеты-носителя Delta IV Heavy в декабре 2014 года. Первые испытания корабля Orion включают в себя его полет на высоте менее шести тысяч километров над поверхностью Земли в течение 4,5 часов.
+										.comment__action
+											a.btn.btn_small(href="#") Ответить
+					<!-- END l-col-width --> 
+
+					<!-- BEGIN l-col-small -->
+					.l-col-small
+						.l-col-small__in
+							include _sidebar.jade
+					<!-- END l-col-small -->
+
+				<!-- END cols -->
+			<!-- END center --> 
+			.push
+
+		<!-- END out --> 
+
+		<!-- BEGIN footer -->	
+		include _footer.jade
+		<!-- END footer -->

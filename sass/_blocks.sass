@@ -125,7 +125,9 @@
 		border-color: #fff  
 	.btn-more
 		color: #c4deff
-		 
+.title_blue
+	.title__link
+		border-color: $blue_d 
 .btn-more
 	display: inline-block
 	position: relative
@@ -394,6 +396,7 @@
 		
 .box
 	padding: 24px 20px 
+	clear: both
 	&__list
 		li
 			border-top: 1px solid #83ade3
@@ -416,8 +419,14 @@
 				color: #b7d3f6 
 				text-align: center
 				+tr(color .3s)
-				
-
+	&_gray		
+		background: #fafafa
+		border: 1px solid #f8f8f8
+		box-shadow: 0 1px 0 #f8f8f8
+	&_right
+		float: right
+		width: 275px
+		margin: 0 0 20px 20px 
 .date-box
 	border: 1px solid #e7e7e7
 	padding: 4px 0 8px
@@ -485,6 +494,16 @@
 	&_event
 		font-size: 14px
 		color: $gray
+	&_internal
+		margin-bottom: 36px
+		.info-box__head,
+		.info-box__main
+			padding: 0
+			p
+				margin-bottom: 0
+		&:last-child
+			margin-bottom: 0
+
 	ul
 		margin-bottom: 17px
 		font-size: 12px
@@ -513,7 +532,7 @@
 				opacity: 0.8
 	&__main
 		clear: both
-		border-top: 1px solid #f8f8f8
+		//border-top: 1px solid #f8f8f8
 		padding: 15px 20px 
 		
 	&__head
@@ -553,7 +572,7 @@
 	height: 32px
 	background: none
 	border: 1px dashed 
-	border-radius: 2px 
+	border-radius: 1px 
 	color: $border
 	font-size: 12px
 	+light
@@ -563,13 +582,21 @@
 	i
 		display: inline-block
 		vertical-align: middle
+		border-right: 1px dashed 
 		width: 30px
 		height: 30px
 		font-size: 24px 
 		font-style: normal
+		&:last-child
+			border: 0
 	span
-		padding-right: 17px
-
+		padding: 0 27px 0 17px
+	&_white
+		background: #fff
+		border-color: $border
+		color: $blue  
+		i
+			color: $border 
 .select
 	position: relative
 	font-size: 14px
@@ -883,3 +910,30 @@
 	li
 		position: relative
 		margin-bottom: 6px
+		
+.user-box
+	display: inline-block
+	vertical-align: middle
+	margin-right: 10px
+	padding-right: 14px
+	background: #93969a 
+	+g(#abafb3, #93969a)
+	font-size: 12px
+	color: #fff 
+	white-space: nowrap
+	+tr(opacity .3s)
+	will-cjange: opacity
+	&:hover
+		opacity: 0.8
+	&__img
+		display: inline-block
+		vertical-align: middle
+		margin-right: 11px
+		border: 1px solid #68717a
+		img
+			display: block
+			width: 100%
+			height: auto
+	&__name
+		display: inline-block
+		vertical-align: middle
