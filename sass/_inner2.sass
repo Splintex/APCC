@@ -179,3 +179,39 @@
 		&:hover
 			background: #fff
 			color: #000
+.table
+	margin: 20px 20px 15px
+	font-size: 11px
+	text-align: center
+	border-spacing: 2px
+	border-collapse: separate
+	+light
+	+box
+	th, td
+		padding: 15px 10px
+		color: #8a9097 
+		vertical-align: middle
+	tbody
+		tr
+			background: #f8f8f8 
+			&:nth-child(2n)
+				background: #EFEFEF 
+			&:last-child
+				background: #e2eef3
+	thead
+		tr
+			background: $border
+		th
+			color: #fff
+			font-weight: normal
+	&__ta-left
+		max-width: 143px 
+		text-align: left
+	&__name
+		font-weight: normal 
+		font-size: 12px
+		+light
+.note
+	margin-left: 20px
+	color: #8A9097
+	font-size: 12px 
