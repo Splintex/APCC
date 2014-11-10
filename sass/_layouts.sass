@@ -14,7 +14,7 @@
 		&:after
 			display: none
 	&_mod
-		padding-right: 5px
+		padding-right: 10px
 .l-cell-big,
 .l-cell-small
 	display: table-cell
@@ -31,6 +31,14 @@
 .l-row-in
 	+clr
 	margin-left: -22px
+	&.has-inline-items
+		font-size: 0
+		.l-col2,
+		.l-col3,
+		.l-col4
+			float: none
+			display: inline-block
+			vertical-align: top
 .l-row-table
 	display: table
 	width: 100%
@@ -87,6 +95,10 @@
 	background: #f4f4f4 
 	+r(1500)
 		width: 240px
+	&.is-fluid
+		width: 31%
+		+r(1500)
+			width: 31%
 	&.no-bg
 		background: none
 	&.has-blue-bg

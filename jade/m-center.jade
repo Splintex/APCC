@@ -1,0 +1,255 @@
+doctype
+html
+
+	head
+		include _head.jade
+		title m-center
+	body
+		<!-- BEGIN header -->
+		include _header.jade
+		<!-- END header -->
+
+		<!-- BEGIN nav -->
+		include _nav.jade
+		<!-- END nav -->
+
+		<!-- BEGIN out -->
+		.out
+			<!-- BEGIN center -->
+			.l-center
+				<!-- BEGIN banner -->
+				.banner.banner_static
+					img(src="img/banner6.jpg", alt="img")
+					.banner__box
+						.banner__title 
+							span Медиацентр
+						.banner__subtitle О центре 
+						p Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создалбольшую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.
+
+				<!-- END banner -->
+				.l-cols
+					<!-- BEGIN l-col-width -->
+					.l-col-width
+						<!-- BEGIN row -->
+						.l-row.l-row_mod
+							.title 
+								a.title__link(href="#") Наши эксперты
+							.l-row-in
+								.l-col3
+									.person.person_mod
+										.person__top
+											.person__img
+												a(href="#")
+													img(src="http://lorempixel.com/75/90/people", alt="img")
+											.person__who
+												a.title-link(href="#") Валерий Зильберман
+												.person__position Топ-менеджер 
+												.person__company “Сигма групп”
+										.person__info
+											p Вы никогда не сумеете решить возникшую проблему, если сохраните то же мышление и тот же подход, который привел вас к этой проблеме.
+								.l-col3
+									.person.person_mod
+										.person__top
+											.person__img
+												a(href="#")
+													img(src="http://lorempixel.com/75/90/people", alt="img")
+											.person__who
+												a.title-link(href="#") Валерий Зильберман
+												.person__position Топ-менеджер 
+												.person__company “Сигма групп”
+										.person__info
+											p Вы никогда не сумеете решить возникшую проблему, если сохраните то же мышление и тот же подход, который привел вас к этой проблеме.
+								.l-col3
+									.person.person_mod
+										.person__top
+											.person__img
+												a(href="#")
+													img(src="http://lorempixel.com/75/90/people", alt="img")
+											.person__who
+												a.title-link(href="#") Валерий Зильберман
+												.person__position Топ-менеджер 
+												.person__company “Сигма групп”
+										.person__info
+											p Вы никогда не сумеете решить возникшую проблему, если сохраните то же мышление и тот же подход, который привел вас к этой проблеме.
+						<!-- END row -->
+
+						<!-- BEGIN cols -->
+						.l-cols.l-cols_padding
+							.l-col-width
+								.l-row
+									.title 
+										a.title__link(href="#") СМИ о нас
+										a.btn-more(href="#")
+									.l-row-in.has-inline-items
+										.l-col2.has-margin
+											.item
+												.item__media
+													a(href="#")
+														img(src="img/item3.jpg", alt="img")
+													a.item__more(href="#")
+												.item__body
+													.date.date_gray 
+														span 02
+														| октября 2014
+													a.title-link(href="#") РАЭК начала разработку правил электронной коммерции
+													p Российская ассоциация электронных коммуникаций (РАЭК) начала разработку правил интернет-торговли в рамках недавно созданного кластера «РАЭК/Электронная коммерция».
+												.item__meta
+													a.user(href="#")
+														i.icon-user
+														| Иван Иванович
+													a.comm-count(href="#") 33
+										.l-col2.has-margin
+											.item
+												.item__media
+													a(href="#")
+														img(src="img/item3.jpg", alt="img")
+													a.item__more(href="#")
+												.item__body
+													.date.date_gray 
+														span 02
+														| октября 2014
+													a.title-link(href="#") РАЭК начала разработку правил электронной коммерции
+													p Российская ассоциация электронных коммуникаций (РАЭК) начала разработку правил интернет-торговли в рамках недавно созданного кластера «РАЭК/Электронная коммерция».
+												.item__meta
+													a.user(href="#")
+														i.icon-user
+														| Иван Иванович
+													a.comm-count(href="#") 33
+							.l-col-small.has-bg.is-fluid
+								.box
+									.title.title_white
+										a.title__link(href="#") Категории
+										a.btn-more(href="#")
+									ul.box__list
+										li
+											a(href="#") 
+												| Кровля и фасады
+												span 6
+										li
+											a(href="#") 
+												| ЛСТК
+												span 6
+										li
+											a(href="#") 
+												| Монтаж
+												span 6
+										li
+											a(href="#") 
+												| МФК
+												span 6
+										li
+											a(href="#") 
+												| Огнезащита
+												span 6
+										li
+											a(href="#") 
+												| Офисы
+												span 6
+										li
+											a(href="#") 
+												| Проектирование
+												span 6
+										li
+											a(href="#") 
+												| Производство
+												span 6
+										li
+											a(href="#") 
+												| Реконструкция
+												span 6
+										li
+											a(href="#") 
+												| Технологии
+												span 6
+						<!-- END cols -->
+						
+						<!-- BEGIN cols -->			
+						.l-cols.l-cols_margin
+							.l-col-width
+								.masonry.js-masonry
+									.masonry__sizer
+									.l-col2.masonry__item
+										.info-box
+											.info-box__head
+												.info-box__icon
+													img(src="img/svg/video.svg", alt="img", width="37")
+												.info-box__meta
+													a.title-link(href="#") Название мультимедиа
+													.date 22 октября 2014
+											.info-box__main
+												p Новый аппарат предполагается вывести на орбиту с помощью ракеты-носителя Delta IV Heavy в декабре 2014 года.
+									.l-col2.masonry__item
+										.info-box
+											.info-box__head
+												.info-box__icon
+													img(src="img/svg/img.svg", alt="img", width="35")
+												.info-box__meta
+													a.title-link(href="#") Название мультимедиа
+													.date 22 октября 2014
+											.info-box__main
+												p Новый аппарат предполагается вывести на орбиту с помощью ракеты-носителя Delta IV Heavy в декабре 2014 года.
+									.l-col2.masonry__item
+										.info-box
+											.info-box__head
+												.info-box__icon
+													img(src="img/svg/video.svg", alt="img", width="37")
+												.info-box__meta
+													a.title-link(href="#") Название мультимедиа
+													.date 22 октября 2014
+											.info-box__main
+												p Новый аппарат предполагается вывести на орбиту с помощью ракеты-носителя Delta IV Heavy в декабре 2014 года.
+									.l-col2.masonry__item
+										.info-box
+											.info-box__head
+												.info-box__icon
+													img(src="img/svg/img.svg", alt="img", width="35")
+												.info-box__meta
+													a.title-link(href="#") Название мультимедиа
+													.date 22 октября 2014
+											.info-box__main
+												p Новый аппарат предполагается вывести на орбиту с помощью ракеты-носителя Delta IV Heavy в декабре 2014 года.
+						<!-- END cols -->
+
+						<!-- BEGIN cols -->			
+						.l-cols.l-cols_margin
+							.l-col-width
+								.l-col-width__in
+									.l-row-in
+										.l-col1
+											.info-box.info-box_blue
+												.title 
+													a.title__link(href="#") Для СМИ
+												.info-box__col
+													.info-box__main
+														p В слабопеременных полях (при флуктуациях на уровне единиц процентов) поверхность усиливает эксимер. При погружении в жидкий кислород экситон масштабирует луч. Объект изотропно масштабирует погранслой даже в случае сильных локальных возмущений среды. 
+														p Сверхновая, как того требуют законы термодинамики, заряжает 
+												.info-box__col
+													.info-box__main
+														img(src="img/svg/letter.svg", alt="img", width="120")
+														p 
+															strong +7(495)232-07-29 
+															em - общие вопросы
+														p 
+															strong +7(495)232-07-29 
+															em - PR отдел
+														p info@steel-development.ru
+
+
+						<!-- END cols -->
+
+					<!-- END l-col-width -->
+
+					<!-- BEGIN l-col-small -->
+					.l-col-small
+						.l-col-small__in
+							include _sidebar.jade
+					<!-- END l-col-small -->
+
+			<!-- END center -->
+			.push
+
+		<!-- END out -->
+
+		<!-- BEGIN footer -->	
+		include _footer.jade
+		<!-- END footer -->

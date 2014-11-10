@@ -1,0 +1,313 @@
+doctype
+html
+
+	head
+		include _head.jade
+		title no-center
+	body
+		<!-- BEGIN header -->
+		include _header.jade
+		<!-- END header -->
+
+		<!-- BEGIN nav -->
+		include _nav.jade
+		<!-- END nav -->
+
+		<!-- BEGIN out -->
+		.out
+			<!-- BEGIN center -->
+			.l-center
+				<!-- BEGIN banner -->
+				.banner.banner_static.is-width-box
+					img(src="img/banner5.jpg", alt="img")
+					.banner__box
+						.banner__title 
+							span Научно-образовательный центр
+						.banner__subtitle О центре 
+						a.btn.to-right(href="#") План работ
+						p Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создалбольшую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.
+
+				<!-- END banner -->
+				.l-cols
+					<!-- BEGIN l-col-width -->
+					.l-col-width
+						<!-- BEGIN cols -->
+						.l-row.l-row_mod
+							.title 
+								a.title__link(href="#") Наши эксперты
+							.l-row-in
+								.l-col3
+									.person.person_mod
+										.person__top
+											.person__img
+												a(href="#")
+													img(src="http://lorempixel.com/75/90/people", alt="img")
+											.person__who
+												a.title-link(href="#") Валерий Зильберман
+												.person__position Топ-менеджер 
+												.person__company “Сигма групп”
+										.person__info
+											p Вы никогда не сумеете решить возникшую проблему, если сохраните то же мышление и тот же подход, который привел вас к этой проблеме.
+								.l-col3
+									.person.person_mod
+										.person__top
+											.person__img
+												a(href="#")
+													img(src="http://lorempixel.com/75/90/people", alt="img")
+											.person__who
+												a.title-link(href="#") Валерий Зильберман
+												.person__position Топ-менеджер 
+												.person__company “Сигма групп”
+										.person__info
+											p Вы никогда не сумеете решить возникшую проблему, если сохраните то же мышление и тот же подход, который привел вас к этой проблеме.
+								.l-col3
+									.person.person_mod
+										.person__top
+											.person__img
+												a(href="#")
+													img(src="http://lorempixel.com/75/90/people", alt="img")
+											.person__who
+												a.title-link(href="#") Валерий Зильберман
+												.person__position Топ-менеджер 
+												.person__company “Сигма групп”
+										.person__info
+											p Вы никогда не сумеете решить возникшую проблему, если сохраните то же мышление и тот же подход, который привел вас к этой проблеме.
+						<!-- END cols -->
+
+						<!-- BEGIN cols -->
+						.l-cols.l-cols_padding
+							.l-col-width
+								.l-row
+									.title 
+										a.title__link(href="#") Аналитические статьи
+										a.btn-more(href="#")
+									.l-row-in.has-inline-items
+										.l-col2.has-margin
+											.item
+												.item__media
+													a(href="#")
+														img(src="img/item3.jpg", alt="img")
+													a.item__more(href="#")
+												.item__body
+													.date.date_gray
+														span 25
+														| октября 2014
+													a.title-link(href="#") Название проекта
+													p Российская ассоциация электронных коммуникаций (РАЭК) начала разработку правил интернет-торговли в рамках недавно созданного кластера «РАЭК/Электронная коммерция».
+												.item__meta
+													a.user(href="#") 
+														i.icon-user 
+														| Иван Иванович
+													a.comm-count(href="#") 33
+										.l-col2.has-margin
+											.item
+												.item__media
+													a(href="#")
+														img(src="img/item3.jpg", alt="img")
+													a.item__more(href="#")
+												.item__body
+													.date.date_gray
+														span 25
+														| октября 2014
+													a.title-link(href="#") Название проекта
+													p Российская ассоциация электронных коммуникаций (РАЭК) начала разработку правил интернет-торговли в рамках недавно созданного кластера «РАЭК/Электронная коммерция».
+												.item__meta
+													a.user(href="#") 
+														i.icon-user 
+														| Иван Иванович
+													a.comm-count(href="#") 33
+							.l-col-small.has-bg.is-fluid
+								.box
+									.title.title_white
+										a.title__link(href="#") Категории
+										a.btn-more(href="#")
+									ul.box__list
+										li
+											a(href="#") 
+												| Кровля и фасады
+												span 6
+										li
+											a(href="#") 
+												| ЛСТК
+												span 6
+										li
+											a(href="#") 
+												| Монтаж
+												span 6
+										li
+											a(href="#") 
+												| МФК
+												span 6
+										li
+											a(href="#") 
+												| Огнезащита
+												span 6
+										li
+											a(href="#") 
+												| Офисы
+												span 6
+										li
+											a(href="#") 
+												| Проектирование
+												span 6
+										li
+											a(href="#") 
+												| Производство
+												span 6
+										li
+											a(href="#") 
+												| Реконструкция
+												span 6
+										li
+											a(href="#") 
+												| Технологии
+												span 6
+						<!-- END cols -->
+
+						<!-- BEGIN cols -->
+						.l-cols
+							.l-col-width
+								.l-row
+									.title
+										a.title__link(href="#") Обучение
+										a.btn-more(href="#")
+									.l-row-in
+										.slider
+											.js-slick-col3
+												.l-col3
+													.info-box.info-box_event
+														.info-box__head
+															.info-box__meta
+																a.title-link(href="#") Название мероприятия
+														.info-box__main
+															p Новый аппарат предполагается вывести на орбиту с помощью ракеты-носителя Delta IV Heavy в декабре 2014 года.
+															ul.meta-info
+																li
+																	a.user(href="#") 
+																		i.icon-user-gray
+																		| SuperUser
+																li
+																	span.time-interval 
+																		i.icon-clock
+																		| 12.12.14 — 12.01.15
+																li
+																	span.money 
+																		i.icon-money
+																		| 100 000 000 рублей
+												.l-col3
+													.info-box.info-box_event
+														.info-box__head
+															.info-box__meta
+																a.title-link(href="#") Название мероприятия
+														.info-box__main
+															p Новый аппарат предполагается вывести на орбиту с помощью ракеты-носителя Delta IV Heavy в декабре 2014 года.
+															ul.meta-info
+																li
+																	a.user(href="#") 
+																		i.icon-user-gray
+																		| SuperUser
+																li
+																	span.time-interval 
+																		i.icon-clock
+																		| 12.12.14 — 12.01.15
+																li
+																	span.money 
+																		i.icon-money
+																		| 100 000 000 рублей
+												.l-col3
+													.info-box.info-box_event
+														.info-box__head
+															.info-box__meta
+																a.title-link(href="#") Название мероприятия
+														.info-box__main
+															p Новый аппарат предполагается вывести на орбиту с помощью ракеты-носителя Delta IV Heavy в декабре 2014 года.
+															ul.meta-info
+																li
+																	a.user(href="#") 
+																		i.icon-user-gray
+																		| SuperUser
+																li
+																	span.time-interval 
+																		i.icon-clock
+																		| 12.12.14 — 12.01.15
+																li
+																	span.money 
+																		i.icon-money
+																		| 100 000 000 рублей
+												.l-col3
+													.info-box.info-box_event
+														.info-box__head
+															.info-box__meta
+																a.title-link(href="#") Название мероприятия
+														.info-box__main
+															p Новый аппарат предполагается вывести на орбиту с помощью ракеты-носителя Delta IV Heavy в декабре 2014 года.
+															ul.meta-info
+																li
+																	a.user(href="#") 
+																		i.icon-user-gray
+																		| SuperUser
+																li
+																	span.time-interval 
+																		i.icon-clock
+																		| 12.12.14 — 12.01.15
+																li
+																	span.money 
+																		i.icon-money
+																		| 100 000 000 рублей
+												.l-col3
+													.info-box.info-box_event
+														.info-box__head
+															.info-box__meta
+																a.title-link(href="#") Название мероприятия
+														.info-box__main
+															p Новый аппарат предполагается вывести на орбиту с помощью ракеты-носителя Delta IV Heavy в декабре 2014 года.
+															ul.meta-info
+																li
+																	a.user(href="#") 
+																		i.icon-user-gray
+																		| SuperUser
+																li
+																	span.time-interval 
+																		i.icon-clock
+																		| 12.12.14 — 12.01.15
+																li
+																	span.money 
+																		i.icon-money
+																		| 100 000 000 рублей
+												.l-col3
+													.info-box.info-box_event
+														.info-box__head
+															.info-box__meta
+																a.title-link(href="#") Название мероприятия
+														.info-box__main
+															p Новый аппарат предполагается вывести на орбиту с помощью ракеты-носителя Delta IV Heavy в декабре 2014 года.
+															ul.meta-info
+																li
+																	a.user(href="#") 
+																		i.icon-user-gray
+																		| SuperUser
+																li
+																	span.time-interval 
+																		i.icon-clock
+																		| 12.12.14 — 12.01.15
+																li
+																	span.money 
+																		i.icon-money
+																		| 100 000 000 рублей
+						<!-- END cols -->
+					<!-- END l-col-width --> 
+
+					<!-- BEGIN l-col-small -->
+					.l-col-small
+						.l-col-small__in
+							include _sidebar.jade
+					<!-- END l-col-small -->
+
+			<!-- END center -->
+			.push
+
+		<!-- END out -->
+
+		<!-- BEGIN footer -->	
+		include _footer.jade
+		<!-- END footer -->

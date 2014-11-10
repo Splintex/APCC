@@ -103,7 +103,8 @@
 		padding: 2px 10px 3px
 	&.to-right
 		float: right
-		
+	&_simple
+		background: none
 .title
 	position: relative
 	margin: 0 0 25px 
@@ -163,6 +164,7 @@
 .item
 	position: relative
 	color: $gray
+	font-size: 14px
 	&__media
 		position: relative
 		img
@@ -224,6 +226,7 @@
 		.user,
 		.date
 			margin: 0 20px 0 0 
+			vertical-align: middle
 	&__head
 		padding-right: 30px
 		margin-bottom: 16px
@@ -340,6 +343,7 @@
 	vertical-align: middle
 	color: $blue 
 	+tr(color .3s)
+	font-size: 12px 
 	&:before
 		content: ""
 		display: inline-block
@@ -523,6 +527,21 @@
 	&_blue
 		background: #e2eef3 
 		border: 0
+		+clr
+		.title
+			+ .info-box__head
+				padding-top: 0 
+				+ .info-box__main
+					padding-bottom: 35px
+	&_media
+		padding-bottom: 40px
+		.info-box__main
+			padding: 0 30px 0 0
+			font-size: 14px
+			color: #666 
+			.to-center
+				margin: 16px 0 0 
+
 	&_internal
 		margin-bottom: 36px
 		.info-box__head,
@@ -545,6 +564,9 @@
 	strong
 		font-weight: normal
 		+bold
+	em
+		font-style: normal
+		+light_it
 	&__media
 		padding: 10px 20px 
 		height: 168px
@@ -559,6 +581,19 @@
 			will-change: opacity 
 			&:hover
 				opacity: 0.8
+	&__col
+		float: left
+		padding: 0 0 13px 
+		width: 50%
+		font-size: 12px
+		.info-box__main
+			font-size: 12px
+			padding: 0 20px 
+			p
+				margin-bottom: 16px
+		img
+			float: left
+			margin-right: 15px
 	&__main
 		clear: both
 		//border-top: 1px solid #f8f8f8
@@ -592,6 +627,9 @@
 		+ .info-box__main
 			overflow: hidden
 			clear: none
+	.title
+		padding: 27px 20px
+		margin: 0 
 .title-link
 	display: inline-block
 	margin-bottom: 13px

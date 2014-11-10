@@ -3,7 +3,7 @@ html
 
 	head
 		include _head.jade
-		title i-center
+		title nt-center
 	body
 		<!-- BEGIN header -->
 		include _header.jade
@@ -22,7 +22,7 @@ html
 					img(src="img/banner3.jpg", alt="img")
 					.banner__box
 						.banner__title 
-							span Инженерный центр
+							span Нормативно-технический центр
 						.banner__subtitle О центре 
 						a.btn.to-right(href="#") План работ
 						p Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создалбольшую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.
@@ -220,138 +220,37 @@ html
 											a(href="#") 
 												| Технологии
 												span 6
-						<!-- END row -->
+						<!-- END cols -->
 
-						<!-- BEGIN row -->
-						.l-cols.l-cols_padding
-							.l-col-width
-								.l-row
-									.title
-										a.title__link(href="#") Кейсы
-										a.btn-more(href="#")
-									.l-row-in
-										.slider
-											.js-slick-col2
-												.l-col2
-													.item
-														.item__media
-															a(href="#")
-																img(src="img/item.jpg", alt="img")
-															a.item__more(href="#")
-														.item__body
-															a.title-link(href="#") Помощь в подборе и покупке оборудования
-															p
-																| Новый аппарат предполагается вывести на орбиту с помощью ракеты-носителя Delta IV 
-																| Heavy в декабре 2014 года.
-												.l-col2
-													.item
-														.item__media
-															a(href="#")
-																img(src="img/item.jpg", alt="img")
-															a.item__more(href="#")
-														.item__body
-															a.title-link(href="#") Помощь в подборе и покупке оборудования
-															p
-																| Новый аппарат предполагается вывести на орбиту с помощью ракеты-носителя Delta IV 
-																| Heavy в декабре 2014 года.
-												.l-col2
-													.item
-														.item__media
-															a(href="#")
-																img(src="img/item.jpg", alt="img")
-															a.item__more(href="#")
-														.item__body
-															a.title-link(href="#") Помощь в подборе и покупке оборудования
-															p
-																| Новый аппарат предполагается вывести на орбиту с помощью ракеты-носителя Delta IV 
-																| Heavy в декабре 2014 года.
-												.l-col2
-													.item
-														.item__media
-															a(href="#")
-																img(src="img/item.jpg", alt="img")
-															a.item__more(href="#")
-														.item__body
-															a.title-link(href="#") Помощь в подборе и покупке оборудования
-															p
-																| Новый аппарат предполагается вывести на орбиту с помощью ракеты-носителя Delta IV 
-																| Heavy в декабре 2014 года.
-												.l-col2
-													.item
-														.item__media
-															a(href="#")
-																img(src="img/item.jpg", alt="img")
-															a.item__more(href="#")
-														.item__body
-															a.title-link(href="#") Помощь в подборе и покупке оборудования
-															p
-																| Новый аппарат предполагается вывести на орбиту с помощью ракеты-носителя Delta IV 
-																| Heavy в декабре 2014 года.
-												.l-col2
-													.item
-														.item__media
-															a(href="#")
-																img(src="img/item.jpg", alt="img")
-															a.item__more(href="#")
-														.item__body
-															a.title-link(href="#") Помощь в подборе и покупке оборудования
-															p
-																| Новый аппарат предполагается вывести на орбиту с помощью ракеты-носителя Delta IV 
-																| Heavy в декабре 2014 года.
-												.l-col2
-													.item
-														.item__media
-															a(href="#")
-																img(src="img/item.jpg", alt="img")
-															a.item__more(href="#")
-														.item__body
-															a.title-link(href="#") Помощь в подборе и покупке оборудования
-															p
-																| Новый аппарат предполагается вывести на орбиту с помощью ракеты-носителя Delta IV 
-																| Heavy в декабре 2014 года.
-												.l-col2
-													.item
-														.item__media
-															a(href="#")
-																img(src="img/item.jpg", alt="img")
-															a.item__more(href="#")
-														.item__body
-															a.title-link(href="#") Помощь в подборе и покупке оборудования
-															p
-																| Новый аппарат предполагается вывести на орбиту с помощью ракеты-носителя Delta IV 
-																| Heavy в декабре 2014 года.
-							.l-col-small.has-blue-bg.is-fluid
-								.box
-									.title
-										a.title__link(href="#") Объекты
-										a.btn-more(href="#")
-								a.map-banner(href="#")
-									img(src="img/map-small.png", alt="img")
+						<!-- BEGIN cols -->
 						.l-cols.l-cols_margin
 							.l-col-width
 								.l-col-width__in
 									.l-row-in
 										.l-col2
-											.info-box.info-box_blue.info-box_media
+											.info-box.info-box_blue
 												.title 
-													a.title__link(href="#") Задать вопрос
-												.info-box__img
-													img(src="img/wtf.png", alt="img")
+													a.title__link(href="#") Документы
+													a.btn-more(href="#")
+												.info-box__head
+													.info-box__icon
+														i.icon-note
+													.info-box__meta
+														a.title-link(href="#") Экспериментальный предел функции: основные моменты
+														.date 22 октября 2014
 												.info-box__main
-													p Новый аппарат предполагается вывести на орбиту с помощью ракеты-носителя Delta IV Heavy
-													.to-center
-														a.btn.btn_simple(href="#") Задать вопрос
+													p Функциональный анализ нейтрализует интеграл от функции, имеющий конечный разрыв. Математическое моделирование однозначно показывает, что непрерывная функция притягивает функциональный анализ
 										.l-col2
 											.info-box.info-box_blue.info-box_media
 												.title 
-													a.title__link(href="#") Часто задаваемые вопросы
+													a.title__link(href="#") Консультация
 												.info-box__img
-													img(src="img/important.png", alt="img")
+													img(src="img/people.png", alt="img")
 												.info-box__main
-													p Новый аппарат предполагается вывести на орбиту с помощью ракеты-носителя Delta IV Heavy
+													p Новый аппарат предполагается вывести на орбиту с помощью ракеты-носителя
 													.to-center
 														a.btn.btn_simple(href="#") Задать вопрос
-						<!-- END row -->
+						<!-- END cols -->
 					<!-- END l-col-width -->
 
 					<!-- BEGIN l-col-small -->
