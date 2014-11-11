@@ -90,10 +90,11 @@
 	font-size: 14px
 	text-align: center
 	+cond
-	+tr(color .3s)
+	+transition(color .3s, border .3s)
 	background: #fafafa 
 	&:hover
 		color: #000 
+		border-color: $rose
 	&:active
 		+transform(translateY(1px))
 	&_medium
@@ -244,7 +245,7 @@
 	
 .item_related
 	position: relative
-	padding: 0 10px 0 30px
+	padding: 0 15px 0 30px
 	margin-bottom: 31px
 	&:last-child
 		&:before

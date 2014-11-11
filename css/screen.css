@@ -302,8 +302,8 @@ a { text-decoration: none; }
 
 .to-center { text-align: center; }
 
-.btn { display: inline-block; padding: 6px 37px; border: 2px solid; color: #68717a; font-size: 14px; text-align: center; font-family: "robotocondensed-regular", Arial, sans-serif; -moz-transition: color 0.3s; -o-transition: color 0.3s; -webkit-transition: color 0.3s; transition: color 0.3s; background: #fafafa; }
-.btn:hover { color: black; }
+.btn { display: inline-block; padding: 6px 37px; border: 2px solid; color: #68717a; font-size: 14px; text-align: center; font-family: "robotocondensed-regular", Arial, sans-serif; -moz-transition: color 0.3s, border 0.3s; -o-transition: color 0.3s, border 0.3s; -webkit-transition: color 0.3s, border 0.3s; transition: color 0.3s, border 0.3s; background: #fafafa; }
+.btn:hover { color: black; border-color: #e50278; }
 .btn:active { -moz-transform: translateY(1px); -ms-transform: translateY(1px); -webkit-transform: translateY(1px); transform: translateY(1px); }
 .btn_medium { padding: 4px 30px; }
 .btn_small { font-size: 12px; padding: 2px 10px 3px; }
@@ -353,7 +353,7 @@ a { text-decoration: none; }
 .item__head .title-link { margin: 0; vertical-align: middle; }
 .item__btn { position: absolute; right: 20px; bottom: 20px; }
 
-.item_related { position: relative; padding: 0 10px 0 30px; margin-bottom: 31px; }
+.item_related { position: relative; padding: 0 15px 0 30px; margin-bottom: 31px; }
 .item_related:last-child:before { display: none; }
 .item_related:before { content: ""; position: absolute; left: 13px; top: 17px; bottom: -31px; width: 2px; background: gainsboro; }
 .item_related .date { position: relative; z-index: 2; margin: 0 0 0 -25px; }
@@ -569,6 +569,28 @@ a { text-decoration: none; }
 .doc__icon i { display: block; }
 .doc__meta { display: inline-block; vertical-align: middle; }
 .doc__meta .title-link { margin-bottom: 0; }
+
+.overlay { display: none; position: fixed; top: 0; right: 0; left: 0; bottom: 0; z-index: 100; background: rgba(0, 0, 0, 0.45); }
+
+.popup-wrap { position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 200; padding: 30px 0; overflow: hidden; -webkit-perspective: 1300px; -moz-perspective: 1300px; perspective: 1300px; visibility: hidden; -webkit-backface-visibility: hidden; -moz-backface-visibility: hidden; backface-visibility: hidden; text-align: center; font-size: 0; }
+.popup-wrap:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
+.popup-wrap.is-visible { visibility: visible; overflow: auto; }
+.popup-wrap.is-visible .popup { -webkit-transform: rotateX(0deg); -moz-transform: rotateX(0deg); -ms-transform: rotateX(0deg); transform: rotateX(0deg); opacity: 1; }
+.popup-wrap.to-center .popup { text-align: center; }
+
+.popup { display: inline-block; vertical-align: middle; text-align: left; width: 550px; position: relative; padding: 60px 100px 68px; height: auto; background: white; font-size: 14px; -moz-transform-style: preserve-3d; -webkit-transform-style: preserve-3d; transform-style: preserve-3d; -moz-transform: rotateX(-70deg); -ms-transform: rotateX(-70deg); -webkit-transform: rotateX(-70deg); transform: rotateX(-70deg); -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; opacity: 0; color: #666666; will-change: opacity; }
+.popup__title { margin-bottom: 35px; font-size: 18px; line-height: 1.2; font-family: "robotocondensed-regular", Arial, sans-serif; text-transform: uppercase; color: black; text-align: center; }
+.popup__info { margin-bottom: 10px; }
+.popup .input { font-size: 12px; }
+.popup .btn { margin-top: 2px; min-width: 150px; }
+.popup .btn-close { position: absolute; right: 15px; top: 15px; }
+.popup .btn-close:active { top: 16px; }
+.popup__links { text-align: center; padding: 5px 0 0; }
+.popup__links p { margin-bottom: 15px; }
+.popup__links p:last-child { margin-bottom: 0; }
+.popup__links a { color: #6d9edc; -moz-transition: color 0.3s; -o-transition: color 0.3s; -webkit-transition: color 0.3s; transition: color 0.3s; }
+.popup__links a:hover { color: #e50278; }
+.popup__message { margin-bottom: 25px; }
 
 .l-row { padding: 31px 22px; *zoom: 1; }
 .l-row:after { content: " "; display: table; clear: both; }

@@ -493,7 +493,33 @@ html
 			.push
 
 		<!-- END out -->
+		<!-- BEGIN ovarlay -->
 
+		.overlay.js-overlay
+		<!-- END ovarlay -->
+
+		<!-- BEGIN popup -->
+		.popup-wrap.js-popup(data-popup="js-popup-enter")
+			.popup
+				.popup__title Вступить
+				label.field
+					input.input(type="text", placeholder="ФИО")
+				label.field
+					input.input(type="email", placeholder="E-mail")
+				label.field
+					input.input(type="text", placeholder="Организация")
+				label.field
+					input.input(type="text", placeholder="Должность")
+				.to-center
+					button.btn(type="submit") Зарегистрироваться
+				button.btn-close.js-popup-close(type="button")
+				.popup__links
+					p 
+						a(href="#") или Войти
+					p
+						a(href="#") Условия вступления
+		<!-- END popup -->
+		
 		<!-- BEGIN footer -->	
 		include _footer.jade
 		<!-- END footer -->

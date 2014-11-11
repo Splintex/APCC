@@ -3,7 +3,7 @@ html
 
 	head
 		include _head.jade
-		title m-center-meropriyatiya
+		title no-center-meropriyatiya
 	body
 		<!-- BEGIN header -->
 		include _header.jade
@@ -32,7 +32,7 @@ html
 							p 12.12.14 — 12.01.15
 							p 100 000 000 рублей
 						.banner__bottom
-							a.banner__btn(href="#") Оставить заявку
+							a.banner__btn.js-popup-link(href="js-popup-subscribe") Оставить заявку
 				<!-- END banner -->
 
 				<!-- BEGIN cols -->
@@ -67,6 +67,27 @@ html
 			.push
 
 		<!-- END out -->
+		
+		<!-- BEGIN ovarlay -->
+		.overlay.js-overlay
+		<!-- END ovarlay -->
+
+		<!-- BEGIN popup -->
+		.popup-wrap.js-popup(data-popup="js-popup-subscribe")
+			.popup
+				.popup__title Записаться
+				label.field
+					input.input(type="text", placeholder="ФИО")
+				label.field
+					input.input(type="text", placeholder="Организация")
+				label.field
+					input.input(type="email", placeholder="E-mail")
+				label.field
+					input.input(type="text", placeholder="Должность")
+				.to-center
+					button.btn(type="submit") Отправить
+				button.btn-close.js-popup-close(type="button")
+		<!-- END popup -->
 
 		<!-- BEGIN footer -->	
 		include _footer.jade

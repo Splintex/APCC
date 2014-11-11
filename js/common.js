@@ -3,6 +3,9 @@ head.ready(function() {
 	$(document).on("click", function(){
         $(".js-select").removeClass("is-active");
 		$(".js-select-list").slideUp(100);
+        $(".js-overlay").fadeOut(300);
+        $(".js-popup").removeClass("is-visible");
+        $("html").removeClass("has-open-popup");
 	});
  
 
@@ -126,5 +129,29 @@ head.ready(function() {
         $(this).parent().find("input").trigger("click");
     	return false;
     });
+
+// popups
+    $(".js-popup-link").on("click", function(event){
+        $(".js-overlay").fadeIn(300);
+        var popup = $(this).attr("href");
+        $("html").addClass("has-open-popup");
+        $(".js-popup").removeClass("is-visible");
+        $('[data-popup="'+popup+'"]').addClass("is-visible");
+        event.stopPropagation();
+        return false; 
+    });
+
+    $(".js-popup-close").on("click", function(){
+        $(".js-overlay").fadeOut(300); 
+        $(this).parents(".js-popup").removeClass("is-visible");
+        $("html").removeClass("has-open-popup");
+        return false;
+    });
+    $(".js-popup").children().on("click", function(event){
+        event.stopPropagation();
+    });
+    // $(".js-overlay").on("click", function(){
+    //     $(".js-popup").removeClass("is-visible");
+    // });
 
 });

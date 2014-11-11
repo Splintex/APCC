@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/screen.css">
-    <title>m-center-meropriyatiya</title>
+    <title>no-center-meropriyatiya</title>
   </head>
   <body><!-- BEGIN header -->
     <header class="header"><a href="#" class="header__logo"><img src="img/logo.png" alt="img"></a>
@@ -21,11 +21,11 @@
             <li><a href="#">FAQ</a></li>
           </ul>
         </li>
-        <li class="menu__item"><a href="#" class="menu__link">Медиацентр</a></li>
+        <li class="menu__item"><a href="#" class="menu__link">Медиацентр </a></li>
       </ul>
       <div class="header__action">
         <div class="header__link"><a href="#">Об ассоциации</a></div>
-        <div class="header__enter"><a href="#" class="btn">Вступить</a></div>
+        <div class="header__enter"><a href="js-popup-enter" class="btn js-popup-link">Вступить</a></div>
       </div>
     </header><!-- END header -->
     <!-- BEGIN nav -->
@@ -60,7 +60,7 @@
               <p>12.12.14 — 12.01.15</p>
               <p>100 000 000 рублей</p>
             </div>
-            <div class="banner__bottom"><a href="#" class="banner__btn">Оставить заявку</a></div>
+            <div class="banner__bottom"><a href="js-popup-subscribe" class="banner__btn js-popup-link">Оставить заявку</a></div>
           </div>
         </div><!-- END banner -->
         <!-- BEGIN cols -->
@@ -147,6 +147,30 @@
       </div><!-- END center -->
       <div class="push"></div>
     </div><!-- END out -->
+    <!-- BEGIN ovarlay -->
+    <div class="overlay js-overlay"></div><!-- END ovarlay -->
+    <!-- BEGIN popup -->
+    <div data-popup="js-popup-subscribe" class="popup-wrap js-popup">
+      <div class="popup">
+        <div class="popup__title">Записаться</div>
+        <label class="field">
+          <input type="text" placeholder="ФИО" class="input">
+        </label>
+        <label class="field">
+          <input type="text" placeholder="Организация" class="input">
+        </label>
+        <label class="field">
+          <input type="email" placeholder="E-mail" class="input">
+        </label>
+        <label class="field">
+          <input type="text" placeholder="Должность" class="input">
+        </label>
+        <div class="to-center">
+          <button type="submit" class="btn">Отправить</button>
+        </div>
+        <button type="button" class="btn-close js-popup-close"></button>
+      </div>
+    </div><!-- END popup -->
     <!-- BEGIN footer -->	<!-- BEGIN footer -->
     <div class="footer">
       <div class="footer__main">

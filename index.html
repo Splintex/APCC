@@ -21,11 +21,11 @@
             <li><a href="#">FAQ</a></li>
           </ul>
         </li>
-        <li class="menu__item"><a href="#" class="menu__link">Медиацентр</a></li>
+        <li class="menu__item"><a href="#" class="menu__link">Медиацентр </a></li>
       </ul>
       <div class="header__action">
         <div class="header__link"><a href="#">Об ассоциации</a></div>
-        <div class="header__enter"><a href="#" class="btn">Вступить</a></div>
+        <div class="header__enter"><a href="js-popup-enter" class="btn js-popup-link">Вступить</a></div>
       </div>
     </header><!-- END header -->
     <!-- BEGIN nav -->
@@ -404,6 +404,34 @@
       </div><!-- END center -->
       <div class="push"></div>
     </div><!-- END out -->
+    <!-- BEGIN ovarlay -->
+    <div class="overlay js-overlay"></div><!-- END ovarlay -->
+    <!-- BEGIN popup -->
+    <div data-popup="js-popup-enter" class="popup-wrap js-popup">
+      <div class="popup">
+        <div class="popup__title">Вступить</div>
+        <label class="field">
+          <input type="text" placeholder="ФИО" class="input">
+        </label>
+        <label class="field">
+          <input type="email" placeholder="E-mail" class="input">
+        </label>
+        <label class="field">
+          <input type="text" placeholder="Организация" class="input">
+        </label>
+        <label class="field">
+          <input type="text" placeholder="Должность" class="input">
+        </label>
+        <div class="to-center">
+          <button type="submit" class="btn">Зарегистрироваться</button>
+        </div>
+        <button type="button" class="btn-close js-popup-close"></button>
+        <div class="popup__links">
+          <p><a href="#">или Войти</a></p>
+          <p><a href="#">Условия вступления</a></p>
+        </div>
+      </div>
+    </div><!-- END popup -->
     <!-- BEGIN footer -->	<!-- BEGIN footer -->
     <div class="footer">
       <div class="footer__main">
