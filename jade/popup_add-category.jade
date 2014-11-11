@@ -1,5 +1,5 @@
 doctype
-html
+html.has-open-popup
 
 	head
 		include _head.jade
@@ -219,11 +219,11 @@ html
 		<!-- END out -->
 
 		<!-- BEGIN ovarlay -->
-		.overlay.js-overlay
+		.overlay.js-overlay(style="display:block")
 		<!-- END ovarlay -->
 
 		<!-- BEGIN popup -->
-		.popup-wrap.to-center.js-popup(data-popup="js-popup-add-category")
+		.popup-wrap.to-center.js-popup.is-visible(data-popup="js-popup-add-category")
 			.popup
 				.popup__message
 					p Добавить категорию в избранное?

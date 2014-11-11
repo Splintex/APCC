@@ -582,7 +582,8 @@ a { text-decoration: none; }
 .popup__title { margin-bottom: 35px; font-size: 18px; line-height: 1.2; font-family: "robotocondensed-regular", Arial, sans-serif; text-transform: uppercase; color: black; text-align: center; }
 .popup__info { margin-bottom: 10px; }
 .popup .input { font-size: 12px; }
-.popup .btn { margin-top: 2px; min-width: 150px; }
+.popup .btn { margin: 2px 0 0 6px; min-width: 150px; }
+.popup .btn:first-child { margin-left: 0; }
 .popup .btn-close { position: absolute; right: 15px; top: 15px; }
 .popup .btn-close:active { top: 16px; }
 .popup__links { text-align: center; padding: 5px 0 0; }
