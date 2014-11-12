@@ -45,6 +45,26 @@
 	&_cat
 		margin-right: 16px
 		width: 19.6%
+		&:nth-child(1)
+			z-index: 10
+		&:nth-child(2)
+			z-index: 9
+		&:nth-child(3)
+			z-index: 8
+		&:nth-child(4)
+			z-index: 7
+		&:nth-child(5)
+			z-index: 6
+		&:nth-child(6)
+			z-index: 5
+		&:nth-child(7)
+			z-index: 4
+		&:nth-child(8)
+			z-index: 3
+		&:nth-child(9)
+			z-index: 2
+		&:nth-child(10)
+			z-index: 1
 	&_action
 		+clr
 		.btn
@@ -312,7 +332,8 @@
 	display: inline-block
 	vertical-align: middle
 	position: relative
-	padding: 0 38px 0 8px 
+	max-width: 100%
+	padding: 0 30px 0 8px 
 	height: 23px
 	line-height: 23px
 	background: #4382d1 
@@ -320,6 +341,9 @@
 	color: #fff 
 	font-size: 12px
 	+tr(opacity .3s)
+	white-space: nowrap
+	overflow: hidden
+	text-overflow: ellipsis
 	will-change: opacity
 	&:hover
 		opacity: 0.9
@@ -700,6 +724,7 @@ a.btn-add
 	position: relative
 	font-size: 14px
 	+light
+	
 	&.is-active
 		.select__text
 			color: #000 
@@ -733,6 +758,7 @@ a.btn-add
 		top: 100%
 		left: 0
 		right: 0
+		z-index: 10
 		margin-top: 1px
 		+transform(translateY(-30px))
 		opacity: 0
