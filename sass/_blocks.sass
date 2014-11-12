@@ -29,7 +29,7 @@
 	&:after
 		content: ""
 		opacity: 0
-		+svg(camera-h,18,15)
+		+svg(camera-h,18,15) 
 		will-change: opacity
 		+tr(opacity .3s)
 .icon-tel
@@ -55,9 +55,9 @@
 	width: 100%
 	height: 32px
 	font-size: 14px
-	background: none
 	border: 1px solid $border
 	+light
+	background: #fff
 	+tr(border .3s linear)
 	+placeholder
 		color: $border
@@ -68,7 +68,7 @@
 		resize: vertical
 		&.has-fixed-height
 			resize: none
-			height: 182px
+			height: 82px
 .search-form
 	position: relative
 	.input
@@ -644,6 +644,7 @@
 		color: $blue 
 
 .btn-add
+	display: inline-block
 	padding: 0 
 	height: 32px
 	background: none
@@ -653,6 +654,7 @@
 	font-size: 12px
 	+light
 	+tr(color .3s)
+	text-align: center
 	&:hover
 		color: #000 
 	i
@@ -667,12 +669,27 @@
 			border: 0
 	span
 		padding: 0 27px 0 17px
+	em
+		font-style: normal
+		font-size: 26px
 	&_white
 		background: #fff
 		border-color: $border
 		color: $blue  
 		i
 			color: $border 
+	&_big
+		display: block
+		margin: 20px 0 45px 
+		width: 100%
+		height: 58px
+		border-width: 2px
+		background: #e9e9e9 
+		color: #abafb3 
+		span, em
+			vertical-align: middle
+a.btn-add
+	line-height: 30px
 .select
 	position: relative
 	font-size: 14px
