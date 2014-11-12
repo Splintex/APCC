@@ -3,9 +3,11 @@ head.ready(function() {
 	$(document).on("click", function(){
         $(".js-select").removeClass("is-active");
 		$(".js-select-list").slideUp(100);
-        $(".js-overlay").fadeOut(300);
-        $(".js-popup").removeClass("is-visible");
-        $("html").removeClass("has-open-popup");
+        // $(".js-overlay").fadeOut(300);
+        // $(".js-popup").removeClass("is-visible");
+        // $("html").removeClass("has-open-popup");
+        $(".js-window").fadeOut(300);
+        $(".js-open-window").parent().removeClass("is-active");
 	});
  
 
@@ -69,6 +71,7 @@ head.ready(function() {
 
 // add any block
 	$("body").on("click",".js-add-btn",function(){
+       // alert();
 		var new_el = $(this).attr("data-hidden");
 		var html = $("."+new_el).html();
 		$(this).before(html);
@@ -147,7 +150,31 @@ head.ready(function() {
         $("html").removeClass("has-open-popup");
         return false;
     });
-    $(".js-popup").children().on("click", function(event){
+
+    $(".js-overlay").on("click", function(){
+        $(".js-overlay").fadeOut(300); 
+        $(this).parents(".js-popup").removeClass("is-visible");
+        $("html").removeClass("has-open-popup");
+    });
+    // $(".js-overlay").on("click", function(){
+    //     $(".js-popup").removeClass("is-visible");
+    // });
+
+// window
+    $(".js-open-window").on("click", function(event){
+        $(".js-open-window").parent().removeClass("is-active");
+        $(this).parent().addClass("is-active");
+        $(".js-window").fadeIn(300);
+        event.stopPropagation();
+        return false; 
+    });
+
+    $(".js-close-window").on("click", function(){
+        $(".js-window").fadeOut(300); 
+        $(".js-open-window").parent().removeClass("is-active");
+        return false;
+    });
+    $(".js-window").children().on("click", function(event){
         event.stopPropagation();
     });
     // $(".js-overlay").on("click", function(){

@@ -493,13 +493,10 @@ html.has-open-popup
 			.push
 
 		<!-- END out -->
-
-		<!-- BEGIN ovarlay -->
-		.overlay.js-overlay(style="display:block")
-		<!-- END ovarlay -->
-
+		
 		<!-- BEGIN popup -->
 		.popup-wrap.js-popup.is-visible(data-popup="js-popup-recovery-pass")
+			.overlay.js-overlay
 			.popup
 				.popup__title Восстановление пароля
 				label.field

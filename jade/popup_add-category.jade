@@ -8,7 +8,7 @@ html.has-open-popup
 		<!-- BEGIN header -->
 		include _header.jade
 		<!-- END header -->
-
+ 
 		<!-- BEGIN nav -->
 		include _nav.jade
 		<!-- END nav -->
@@ -218,12 +218,9 @@ html.has-open-popup
 
 		<!-- END out -->
 
-		<!-- BEGIN ovarlay -->
-		.overlay.js-overlay(style="display:block")
-		<!-- END ovarlay -->
-
 		<!-- BEGIN popup -->
 		.popup-wrap.to-center.js-popup.is-visible(data-popup="js-popup-add-category")
+			.overlay.js-overlay
 			.popup
 				.popup__message
 					p Добавить категорию в избранное?

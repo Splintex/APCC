@@ -1,28 +1,17 @@
-// .has-open-popup
-// 	// body
-// 	// 	overflow: hidden
-// 	// 	padding-right: 17px
+.has-open-popup
+	.header
+		right: 17px
+	body
+		padding-right: 17px
+		overflow: hidden
 .overlay
-	display: none
 	position: fixed
 	top: 0
 	right: 0
 	left: 0
-	bottom: 0
-	z-index: 100
-	background: rgba(#000,.45) 
-	
-// .popup
-// 	position: relative
-// 	display: inline-block
-// 	vertical-align: middle
-// 	margin: 10px 0
-// 	padding: 0 84px 
-// 	width: 490px
-// 	+box
-// 	background: #e5f8fe
-// 	font-size: 13px
-	 
+	height: 2000px
+	z-index: 1
+	background: rgba(#000,.45)
 .popup-wrap
 	position: fixed
 	top: 0
@@ -53,6 +42,8 @@
 		.popup
 			text-align: center
 .popup
+	position: relative
+	z-index: 2
 	display: inline-block
 	vertical-align: middle
 	text-align: left
@@ -62,12 +53,7 @@
 	height: auto
 	background: #fff
 	font-size: 14px
-	// -webkit-transform-style: preserve-3d
-	// -moz-transform-style: preserve-3d
 	+transform-style(preserve-3d)
-	// -webkit-transform: rotateX(-70deg)
-	// -moz-transform: rotateX(-70deg)
-	// -ms-transform: rotateX(-70deg)
 	+transform(rotateX(-70deg))
 	+tr(all .3s)
 	opacity: 0
@@ -114,3 +100,4 @@
 	&__form
 		padding: 20px
 		background: #e9e9e9  
+		

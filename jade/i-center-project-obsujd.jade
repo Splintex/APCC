@@ -1,5 +1,5 @@
 doctype
-html
+html.has-open-popup
 
 	head
 		include _head.jade
@@ -108,7 +108,7 @@ html
 														a(href="mailto:Ivan@site.ru") 
 															i.icon-email
 															| Ivan@site.ru
-										button.btn-add.btn-add_white
+										a.btn-add.btn-add_white.js-popup-link(href="js-popup-invite")
 											i +
 											span Пригласить еще
 									.comment
@@ -168,6 +168,37 @@ html
 			.push
 
 		<!-- END out --> 
+
+		<!-- BEGIN popup -->
+		.popup-wrap.js-popup.is-visible(data-popup="js-popup-invite")
+			.overlay.js-overlay
+			.popup
+				.popup__title Пригласить коллег
+				.popup__form
+					label.field
+						input.input(type="text", placeholder="ФИО")
+					label.field
+						input.input(type="email", placeholder="E-mail")
+					label.field
+						textarea.input.input_textarea.has-fixed-height(placeholder="Сообщение")
+				button.btn-add.btn-add_big.js-add-btn(data-hidden="js-hidden-invite", type="button")
+					em +
+					span Добавить еще
+
+				.js-hidden-invite(hidden)
+					.popup__form
+						label.field
+							input.input(type="text", placeholder="ФИО")
+						label.field
+							input.input(type="email", placeholder="E-mail")
+						label.field
+							textarea.input.input_textarea.has-fixed-height(placeholder="Сообщение")
+				.to-center
+					button.btn(type="button").js-popup-close Отмена
+					button.btn(type="submit") Готово
+
+				button.btn-close.js-popup-close(type="button")
+		<!-- END popup -->
 
 		<!-- BEGIN footer -->	
 		include _footer.jade

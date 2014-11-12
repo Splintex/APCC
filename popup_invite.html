@@ -220,6 +220,30 @@
       </div><!-- END center --> 
       <div class="push"></div>
     </div><!-- END out -->
+    <!-- BEGIN popup -->
+    <div data-popup="js-popup-invite" class="popup-wrap js-popup is-visible">
+      <div class="overlay js-overlay"></div>
+      <div class="popup">
+        <div class="popup__title">Пригласить коллег</div>
+        <div class="popup__form">
+          <label class="field">
+            <input type="text" placeholder="ФИО" class="input">
+          </label>
+          <label class="field">
+            <input type="email" placeholder="E-mail" class="input">
+          </label>
+          <label class="field">
+            <textarea placeholder="Сообщение" class="input input_textarea has-fixed-height"></textarea>
+          </label>
+        </div>
+        <button type="button" class="btn-add btn-add_big"><em>+</em><span>Добавить еще</span></button>
+        <div class="to-center">
+          <button type="button" class="btn js-popup-close">Отмена</button>
+          <button type="submit" class="btn">Готово</button>
+        </div>
+        <button type="button" class="btn-close js-popup-close"></button>
+      </div>
+    </div><!-- END popup -->
     <!-- BEGIN ovarlay -->
     <div style="display:block" class="overlay js-overlay"></div><!-- END ovarlay -->
     <!-- BEGIN popup -->
@@ -237,22 +261,12 @@
             <textarea placeholder="Сообщение" class="input input_textarea has-fixed-height"></textarea>
           </label>
         </div>
-        <button data-hidden="js-hidden-invite" type="button" class="btn-add btn-add_big js-add-btn"><em>+</em><span>Добавить еще</span></button>
+        <button type="button" class="btn-add btn-add_big"><em>+</em><span>Добавить еще</span></button>
         <div class="to-center">
-          <button type="submit" class="btn">Зарегистрироваться</button>
+          <button type="button" class="btn js-popup-close">Отмена</button>
+          <button type="submit" class="btn">Готово</button>
         </div>
         <button type="button" class="btn-close js-popup-close"></button>
-        <div hidden class="js-hidden-field">
-          <label class="field">
-            <input type="text" placeholder="ФИО" class="input">
-          </label>
-          <label class="field">
-            <input type="email" placeholder="E-mail" class="input">
-          </label>
-          <label class="field">
-            <textarea placeholder="Сообщение" class="input input_textarea has-fixed-height"></textarea>
-          </label>
-        </div>
       </div>
     </div><!-- END popup -->
     <!-- BEGIN footer -->	<!-- BEGIN footer -->

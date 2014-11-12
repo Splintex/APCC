@@ -169,6 +169,27 @@ html.has-open-popup
 
 		<!-- END out -->
 
+		<!-- BEGIN popup -->
+		.popup-wrap.js-popup.is-visible(data-popup="js-popup-invite")
+			.overlay.js-overlay
+			.popup
+				.popup__title Пригласить коллег
+				.popup__form
+					label.field
+						input.input(type="text", placeholder="ФИО")
+					label.field
+						input.input(type="email", placeholder="E-mail")
+					label.field
+						textarea.input.input_textarea.has-fixed-height(placeholder="Сообщение")
+				button.btn-add.btn-add_big(type="button")
+					em +
+					span Добавить еще
+				.to-center
+					button.btn(type="button").js-popup-close Отмена
+					button.btn(type="submit") Готово
+
+				button.btn-close.js-popup-close(type="button")
+		<!-- END popup -->
 		<!-- BEGIN ovarlay -->
 		.overlay.js-overlay(style="display:block")
 		<!-- END ovarlay -->
@@ -184,21 +205,16 @@ html.has-open-popup
 						input.input(type="email", placeholder="E-mail")
 					label.field
 						textarea.input.input_textarea.has-fixed-height(placeholder="Сообщение")
-				button.btn-add.btn-add_big.js-add-btn(data-hidden="js-hidden-invite", type="button")
+				button.btn-add.btn-add_big(type="button")
 					em +
 					span Добавить еще
 				.to-center
-					button.btn(type="submit") Зарегистрироваться
+					button.btn(type="button").js-popup-close Отмена
+					button.btn(type="submit") Готово
+
 				button.btn-close.js-popup-close(type="button")
-				.js-hidden-field(hidden)
-					label.field
-						input.input(type="text", placeholder="ФИО")
-					label.field
-						input.input(type="email", placeholder="E-mail")
-					label.field
-						textarea.input.input_textarea.has-fixed-height(placeholder="Сообщение")
 		<!-- END popup -->
-			
+		
 		<!-- BEGIN footer -->	
 		include _footer.jade
 		<!-- END footer -->
