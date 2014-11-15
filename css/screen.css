@@ -44,7 +44,7 @@ a { text-decoration: none; }
 .out { padding: 80px 0 0 293px; margin: 0 0 -420px; min-height: 100%; height: auto !important; height: 100%; overflow: hidden; }
 @media only screen and (max-width: 1500px) { .out { padding-left: 240px; } }
 
-.l-center { margin: 0 auto; max-width: 1500px; background: white; }
+.l-center { margin: 20px auto; max-width: 1500px; background: white; overflow: hidden; }
 @media only screen and (min-width: 1800px) { .l-center { box-shadow: 0 0 4px rgba(0, 0, 0, 0.56); } }
 
 .push { clear: both; height: 420px; }
@@ -104,7 +104,8 @@ a { text-decoration: none; }
 .footer__categ a { font-size: 14px; color: #68717a; text-transform: uppercase; font-family: "robotocondensed-regular", Arial, sans-serif; }
 .footer__meta { margin: 0 20px 0 314px; border-top: 1px solid #e0e7ee; padding: 20px 0; color: white; font-size: 12px; }
 
-.page-top + .masonry { margin-top: 25px; }
+.page-top .breadcrumbs, .page-top .form-item { margin-bottom: 10px; }
+.page-top + .masonry { margin-top: 15px; }
 
 .banner { display: block; position: relative; color: white; }
 .banner.is-width-box .banner__box { width: 80%; }
@@ -128,9 +129,9 @@ a { text-decoration: none; }
 .banner_static img { position: absolute; top: 0; left: 0; width: 100%; height: auto; }
 @media only screen and (max-width: 1500px) { .banner_static img { width: auto; height: 100%; } }
 .banner_static .banner__title { position: static; margin: 0 0 13px; width: auto; text-align: left; }
-.banner_static .banner__box { padding: 28px 46px 32px; margin: 0; position: relative; z-index: 2; display: block; width: 690px; }
+.banner_static .banner__box { padding: 28px 46px 32px; margin: 0; position: relative; z-index: 2; display: block; width: 740px; }
 
-.sidenav { padding: 14px 20px 14px 45px; font-size: 18px; text-transform: uppercase; font-family: "robotocondensed-regular", Arial, sans-serif; }
+.sidenav { padding: 49px 20px 14px 45px; font-size: 18px; text-transform: uppercase; font-family: "robotocondensed-regular", Arial, sans-serif; }
 .sidenav li { margin-bottom: 30px; }
 .sidenav li.is-active a { border-color: #e50278; }
 .sidenav li.is-active .btn-more { display: block; }
@@ -197,6 +198,7 @@ a { text-decoration: none; }
 .breadcrumbs a:before { content: ""; position: absolute; left: -10px; top: 9px; background: url("../img/svg/angle-r.svg") no-repeat 0 0; -moz-background-size: 6px 8px; -o-background-size: 6px 8px; -webkit-background-size: 6px 8px; background-size: 6px 8px; width: 6px; height: 8px; display: inline-block; }
 
 .article { margin-bottom: 36px; }
+.article + .box { margin-top: -20px; }
 .article .categ { margin-bottom: 26px; }
 .article__meta { margin-bottom: 16px; }
 .article__meta .date, .article__meta .categ, .article__meta .user, .article__meta .comm-counter { vertical-align: middle; margin: 0 20px 0 0; }
@@ -207,6 +209,7 @@ a { text-decoration: none; }
 .article h1, .article h2, .article h3, .article h4, .article h5, .article h6 { margin-bottom: 23px; font-family: "robotocondensed-regular", Arial, sans-serif; font-weight: normal; color: black; }
 .article h1 { font-size: 18px; }
 .article h2 { font-size: 16px; }
+.article h2:last-child { margin-bottom: 0; }
 .article h3, .article h4, .article h5, .article h6 { font-size: 14px; }
 .article p { margin-bottom: 28px; font-family: "pragmaticalight", Arial, sans-serif; }
 .article strong, .article b { font-weight: normal; font-family: "pragmaticabold", Arial, sans-serif; }
@@ -312,7 +315,7 @@ a { text-decoration: none; }
 .input::placeholder { color: #abafb3; }
 .input:focus { border-color: black; }
 .input_textarea { padding: 6px 12px; resize: vertical; }
-.input_textarea.has-fixed-height { resize: none; height: 82px; }
+.input_textarea.has-fixed-height { resize: none; height: 182px; }
 
 .search-form { position: relative; }
 .search-form .input { padding-right: 35px; }
@@ -669,6 +672,9 @@ a.btn-add { line-height: 30px; }
 .l-col-small.has-blue-bg { background: #e2eef3; }
 .l-col-small.has-bg { background: #4382d1; }
 .l-col-small__in { padding: 30px 20px; }
+
+.l-col-width .l-col-small.has-blue-bg { position: relative; }
+.l-col-width .l-col-small.has-blue-bg:after { content: ""; position: absolute; left: 0; right: 0; top: 100%; height: 500px; background: #e2eef3; }
 
 .l-col-right { display: table-cell; vertical-align: top; width: 275px; }
 

@@ -103,10 +103,23 @@
 		background: none
 	&.has-blue-bg
 		background: #e2eef3 
+		
 	&.has-bg
 		background: #4382d1
 	&__in 
 		padding: 30px 20px 
+.l-col-width
+	.l-col-small 
+		&.has-blue-bg
+			position: relative
+			&:after
+				content: ""
+				position: absolute
+				left: 0
+				right: 0
+				top: 100%
+				height: 500px 
+				background: #e2eef3  
 .l-col-right
 	display: table-cell
 	vertical-align: top

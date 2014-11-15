@@ -181,4 +181,6 @@ head.ready(function() {
     //     $(".js-popup").removeClass("is-visible");
     // });
 
+	$('input, textarea').placeholder();
+
 });
