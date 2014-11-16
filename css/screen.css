@@ -126,8 +126,8 @@ a { text-decoration: none; }
 .banner_title .banner__title span { vertical-align: middle; font-size: 34px; }
 
 .banner_static { overflow: hidden; padding: 37px 22px 34px; }
-.banner_static img { position: absolute; top: 0; left: 0; width: 100%; height: auto; }
-@media only screen and (max-width: 1500px) { .banner_static img { width: auto; height: 100%; } }
+.banner_static img { position: absolute; top: 0; left: 0; width: auto; height: 110%; }
+@media only screen and (max-width: 1500px) { .banner_static img { height: 100%; } }
 .banner_static .banner__title { position: static; margin: 0 0 13px; width: auto; text-align: left; }
 .banner_static .banner__box { padding: 28px 46px 32px; margin: 0; position: relative; z-index: 2; display: block; width: 740px; }
 
@@ -171,6 +171,7 @@ a { text-decoration: none; }
 .window__title { margin: 0 0 30px; font-size: 16px; font-family: "robotocondensed-regular", Arial, sans-serif; color: black; line-height: 1; }
 .window__info p { margin-bottom: 22px; }
 .window .btn-close { top: 10px; right: 10px; }
+.window .btn { background: none; }
 
 .calendar { display: table; width: 100%; border: 1px solid #f8f8f8; table-layout: fixed; }
 .calendar__row { display: table-row; }
@@ -323,7 +324,7 @@ a { text-decoration: none; }
 
 .to-center { text-align: center; }
 
-.btn { display: inline-block; padding: 6px 37px; border: 2px solid; color: #68717a; font-size: 14px; text-align: center; font-family: "robotocondensed-regular", Arial, sans-serif; -moz-transition: color 0.3s, border 0.3s; -o-transition: color 0.3s, border 0.3s; -webkit-transition: color 0.3s, border 0.3s; transition: color 0.3s, border 0.3s; background: #fafafa; }
+.btn { display: inline-block; padding: 6px 37px; border: 2px solid; color: #68717a; font-size: 14px; text-align: center; font-family: "robotocondensed-regular", Arial, sans-serif; -moz-transition: color 0.3s, border 0.3s; -o-transition: color 0.3s, border 0.3s; -webkit-transition: color 0.3s, border 0.3s; transition: color 0.3s, border 0.3s; background: none; }
 .btn:hover { color: black; border-color: #e50278; }
 .btn:active { -moz-transform: translateY(1px); -ms-transform: translateY(1px); -webkit-transform: translateY(1px); transform: translateY(1px); }
 .btn_medium { padding: 4px 30px; }
@@ -342,6 +343,8 @@ a { text-decoration: none; }
 .title_white .btn-more:hover { color: white; }
 
 .title_blue .title__link { border-color: #3a70b4; }
+
+.title_mod { margin: 0 0 10px 20px; }
 
 .btn-more { display: inline-block; position: relative; width: 27px; height: 24px; line-height: 1; border: 2px solid; color: #abafb3; text-align: center; font-family: "robotocondensed-regular", Arial, sans-serif; -moz-transition: color 0.3s; -o-transition: color 0.3s; -webkit-transition: color 0.3s; transition: color 0.3s; }
 .btn-more:before { content: "..."; position: absolute; top: -14px; height: 3px; left: 0px; right: 0; font-size: 30px; }

@@ -40,6 +40,30 @@ head.ready(function() {
         arrows: true,
         adaptiveHeight: true
     });
+
+    $('.js-slick-calendar').slick({
+        dots: false,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        adaptiveHeight: true,
+        onAfterChange: function(index) {
+           // var current = $(".js-slider-current");
+            var title = $(".js-slick-calendar-title");
+            //var index = $('.js-slider').slickCurrentSlide()+1;
+            var text = $('.js-slick-calendar').find(".slick-active").attr("data-title");
+            title.text(text);
+            //current.text(index);
+        }
+    });
+    $(".js-slick-calendar-prev").on("click",function(){
+        $('.js-slick-calendar').slickPrev();
+    });
+    $(".js-slick-calendar-next").on("click",function(){
+        $('.js-slick-calendar').slickNext();
+    });
         
 
 //init datepicker
