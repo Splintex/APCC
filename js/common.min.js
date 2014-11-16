@@ -89,8 +89,7 @@ head.ready(function() {
 
 	$(".js-masonry").masonry({
  		itemSelector: '.masonry__item',
- 		columnWidth: ".masonry__sizer",
- 		//gutter: 20
+ 		columnWidth: ".masonry__sizer"
 	}); 
 
 // add any block
@@ -205,6 +204,23 @@ head.ready(function() {
     //     $(".js-popup").removeClass("is-visible");
     // });
 
+// placeholder plugit init
 	$('input, textarea').placeholder();
+
+// scroll fixed elements
+    function scrollFixedElemets() {
+        var scroll_left = $(this).scrollLeft();
+        if (scroll_left > 0) {
+            console.log(scroll_left);
+            $(".nav, .header").css({
+                left: -scroll_left
+            });
+        }
+        
+    }
+    //scrollFixedElemets();
+    $(window).scroll(function(){
+        scrollFixedElemets()
+    });
 
 });

@@ -51,7 +51,7 @@ a { text-decoration: none; }
 
 .is-remove-ready { -moz-transform: translateX(-100px); -ms-transform: translateX(-100px); -webkit-transform: translateX(-100px); transform: translateX(-100px); opacity: 0; will-change: transform, opacity; -moz-transition: -moz-transform 0.2s, opacity 0.2s; -o-transition: -o-transform 0.2s, opacity 0.2s; -webkit-transition: -webkit-transform 0.2s, opacity 0.2s; transition: transform 0.2s, opacity 0.2s; }
 
-.header { position: fixed; z-index: 21; left: 0; right: 0; top: 0; padding: 16px 12px 16px 30px; height: 80px; *zoom: 1; background: white; }
+.header { position: fixed; z-index: 21; left: 0; right: 0; top: 0; padding: 16px 12px 16px 30px; height: 80px; min-width: 1272px; *zoom: 1; background: white; }
 .header:after { content: " "; display: table; clear: both; }
 .header__logo { float: left; margin: 12px 1.7% 0 0; }
 .header__action { float: right; *zoom: 1; }
