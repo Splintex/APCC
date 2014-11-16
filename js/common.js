@@ -218,7 +218,7 @@ head.ready(function() {
         }
         
     }
-    //scrollFixedElemets();
+    scrollFixedElemets();
     $(window).scroll(function(){
         scrollFixedElemets()
     });
