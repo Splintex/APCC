@@ -79,6 +79,20 @@ html
 	// 	+border-radius(4px) 
 	+selection
 		background: rgba($blue,.3)  
+	&.mobile
+		height: auto
+		body
+			height: auto
+			position: relative
+		.out
+			padding: 0 0 0 240px
+		.header
+			position: relative
+			top: 0
+		.nav
+			position: absolute
+			top: 80px
+			bottom: 0
 a
 	text-decoration: none
 .wrap
@@ -96,11 +110,12 @@ a
 	+r(1500)
 		padding-left: 240px
 .l-center
-	margin: 20px auto 
+	margin: 0 auto 
 	max-width: 1500px
 	background: #fff 
 	overflow: hidden
 	+rmin(1800)
+		margin: 20px auto 
 		box-shadow: 0 0 4px rgba(#000,.56) 
 .push
 	clear: both
@@ -118,14 +133,24 @@ a
 	left: 0
 	right: 0
 	top: 0
-	padding: 16px 12px 16px 30px 
-	height: 80px
 	min-width: 1272px 
-	+clr
 	background: #fff
+	+rmin(1800)
+		padding-left: 293px
+	&__in
+		+clr
+		height: 80px
+		padding: 16px 12px 16px 300px
+		position: relative
+		+rmin(1800)
+			margin: 0 auto 
+			padding-left: 0
+			max-width: 1500px			
 	&__logo
-		float: left
-		margin: 12px 1.7% 0 0
+		position: absolute
+		z-index: 2
+		left: 30px
+		top: 23px
 	&__action
 		float: right
 		+clr
@@ -148,10 +173,10 @@ a
 .menu
 	float: left
 	display: table
-	width: 59%
+	width: 75%
 	table-layout: fixed
 	+r(1400)
-		width: 55%
+		width: 72%
 	&__item
 		display: table-cell
 		border-right: 1px solid #e7e7e7 

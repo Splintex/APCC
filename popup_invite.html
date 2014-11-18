@@ -9,23 +9,25 @@
   </head>
   <body><!-- BEGIN header -->
     <header class="header"><a href="#" class="header__logo"><img src="img/logo.png" alt="img"></a>
-      <ul class="menu">
-        <li class="menu__item"><a href="#" class="menu__link">Инженерный центр</a></li>
-        <li class="menu__item"><a href="#" class="menu__link">Нормативно-технический центр</a></li>
-        <li class="menu__item"><a href="#" class="menu__link">Научно-образовательный центр</a>
-          <ul class="menu__drop">
-            <li><a href="#">О центре</a></li>
-            <li><a href="#">Проекты</a></li>
-            <li><a href="#">Библиотека</a></li>
-            <li><a href="#">Аналитика</a></li>
-            <li><a href="#">FAQ</a></li>
-          </ul>
-        </li>
-        <li class="menu__item"><a href="#" class="menu__link">Медиацентр </a></li>
-      </ul>
-      <div class="header__action">
-        <div class="header__link"><a href="#">Об ассоциации</a></div>
-        <div class="header__enter"><a href="js-popup-enter" class="btn js-popup-link">Вступить</a></div>
+      <div class="header__in">
+        <ul class="menu">
+          <li class="menu__item"><a href="#" class="menu__link">Инженерный центр</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">Нормативно-технический центр</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">Научно-образовательный центр</a>
+            <ul class="menu__drop">
+              <li><a href="#">О центре</a></li>
+              <li><a href="#">Проекты</a></li>
+              <li><a href="#">Библиотека</a></li>
+              <li><a href="#">Аналитика</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </li>
+          <li class="menu__item"><a href="#" class="menu__link">Медиацентр </a></li>
+        </ul>
+        <div class="header__action">
+          <div class="header__link"><a href="#">Об ассоциации</a></div>
+          <div class="header__enter"><a href="js-popup-enter" class="btn js-popup-link">Вступит</a></div>
+        </div>
       </div>
     </header><!-- END header -->
     <!-- BEGIN nav -->
@@ -236,7 +238,7 @@
             <textarea placeholder="Сообщение" class="input input_textarea has-fixed-height"></textarea>
           </label>
         </div>
-        <button type="button" class="btn-add btn-add_big"><em>+</em><span>Добавить еще</span></button>
+        <button data-hidden="js-hidden-form" type="button" class="btn-add btn-add_big js-add-btn"><em>+</em><span>Добавить еще</span></button>
         <div class="to-center">
           <button type="button" class="btn js-popup-close">Отмена</button>
           <button type="submit" class="btn">Готово</button>
@@ -244,32 +246,19 @@
         <button type="button" class="btn-close js-popup-close"></button>
       </div>
     </div><!-- END popup -->
-    <!-- BEGIN ovarlay -->
-    <div style="display:block" class="overlay js-overlay"></div><!-- END ovarlay -->
-    <!-- BEGIN popup -->
-    <div data-popup="js-popup-invite" class="popup-wrap js-popup is-visible">
-      <div class="popup">
-        <div class="popup__title">Пригласить коллег</div>
-        <div class="popup__form">
-          <label class="field">
-            <input type="text" placeholder="ФИО" class="input">
-          </label>
-          <label class="field">
-            <input type="email" placeholder="E-mail" class="input">
-          </label>
-          <label class="field">
-            <textarea placeholder="Сообщение" class="input input_textarea has-fixed-height"></textarea>
-          </label>
-        </div>
-        <button type="button" class="btn-add btn-add_big"><em>+</em><span>Добавить еще</span></button>
-        <div class="to-center">
-          <button type="button" class="btn js-popup-close">Отмена</button>
-          <button type="submit" class="btn">Готово</button>
-        </div>
-        <button type="button" class="btn-close js-popup-close"></button>
+    <div hidden class="js-hidden-form">
+      <div class="popup__form">
+        <label class="field">
+          <input type="text" placeholder="ФИО" class="input">
+        </label>
+        <label class="field">
+          <input type="email" placeholder="E-mail" class="input">
+        </label>
+        <label class="field">
+          <textarea placeholder="Сообщение" class="input input_textarea has-fixed-height"></textarea>
+        </label>
       </div>
-    </div><!-- END popup -->
-    <!-- BEGIN footer -->	<!-- BEGIN footer -->
+    </div><!-- BEGIN footer -->	<!-- BEGIN footer -->
     <div class="footer">
       <div class="footer__main">
         <div class="footer__info">

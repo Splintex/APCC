@@ -47,7 +47,7 @@ head.ready(function() {
         speed: 300,
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: true,
+        arrows: false,
         adaptiveHeight: true,
         onAfterChange: function(index) {
            // var current = $(".js-slider-current");
@@ -208,19 +208,16 @@ head.ready(function() {
 	$('input, textarea').placeholder();
 
 // scroll fixed elements
-    function scrollFixedElemets() {
+    function scrollFixedElements() {
         var scroll_left = $(this).scrollLeft();
-        if (scroll_left > 0) {
-            console.log(scroll_left);
-            $(".nav, .header").css({
-                left: -scroll_left
-            });
-        }
+        $(".desktop .nav, .desktop .header").css({
+            left: -scroll_left
+        });
         
     }
-    scrollFixedElemets();
+    scrollFixedElements();
     $(window).scroll(function(){
-        scrollFixedElemets()
+        scrollFixedElements()
     });
 
 });
